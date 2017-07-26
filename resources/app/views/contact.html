@@ -1,0 +1,89 @@
+<style>
+  	.error{
+		color: red;
+	}  
+</style>
+<div class="row" id="contact">
+
+    <div class="col-lg-12 col-md-8">
+        <div class="panel-heading text-center title">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="panel-body">
+            <div class="col-lg-6 col-md-4">
+                <form class="form-horizontal" role="form" method="post" name="contactUsForm" ng-submit="send()" novalidate>
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" ng-required="true" class="form-control" id="name"  ng-model="contact.name" name="name" placeholder="First & Last Name" value="" required/>
+                            <span class="error" ng-show="showValidation && contactUsForm.name.$error.required">Required</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input ng-required="true"  type="email" class="form-control" id="email" name="email" ng-model="contact.email" placeholder="example@domain.com" value="" required/>
+                            <span class="error" ng-show="showValidation && contactUsForm.email.$error.required">Required</span>
+                            <span class="error" ng-show="showValidation && contactUsForm.email.$error.email">Invalid email</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="col-sm-2 control-label">Message</label>
+                        <div class="col-sm-10">
+                            <textarea ng-required="true"  class="form-control" rows="4" name="message" ng-model="contact.message" required></textarea>
+                            <span class="error" ng-show="showValidation && contactUsForm.message.$error.required">Required</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <input id="submit" ng-disabled="showValidation && !contactUsForm.$valid" name="submit" type="submit" value="Send"  class="btn btn-primary">
+                            <!-- <button class="progress-button" data-style="shrink" data-horizontal>Submit</button> -->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2 bg-info" ng-show="successMsg">
+                            {{successMsg}}
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-md-4 col-lg-6">
+              <span class="">
+                     <ul class="list-unstyled">
+                         Connect with me :
+                         <li><a href="mailto:vishdharm.181910@gmail.com"  class="btn btn-default">
+                                 <i class="fa fa-envelope"></i> hello@vdharam.com
+                             </a>
+                         </li>
+
+                         <li>
+                         <a href="https://in.linkedin.com/pub/dharmendra-vishwakarma/57/17/3a9" target='_blank' class="btn btn-default">
+                             <i class="fa fa-linkedin"></i> LinkedIn
+                         </a>
+                         </li>
+
+                         <li>
+                         <a href="https://github.com/dharm18" target='_blank' class="btn btn-default">
+                             <i class="fa fa-github"></i> Github
+                         </a>
+                         </li>
+                         <li>
+                         <a href="http://freecodecamp.com/dharm18" target='_blank' class="btn btn-default">
+                             <i class="fa fa-fire fa-fw"></i> Free Code Camp
+                         </a>
+                         </li>
+                         <li>
+                         <a href="https://www.hackerrank.com/dharm18" target='_blank' class="btn btn-default">
+                             <i class="fa fa-hackerrank"></i> Hackerrank
+                         </a>
+                         </li>
+                         
+                     </ul>
+              </span>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</div>
