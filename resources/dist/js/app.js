@@ -199,7 +199,7 @@
 (function(){
     var recommendationsFactory = function($http) {
 
-        var url="testimonial";
+        var url="http://site-vdharam.rhcloud.com/testimonial";
 
         return {
         	retrieve: function(){
