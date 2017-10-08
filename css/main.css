@@ -97,9 +97,14 @@ textarea {
 
 
 body {
-    background-color: #dc3023;
+    background-color: rgba(0,0,0,0);
     color: #fff;
+    display: block;
+    font-family: Roboto,Arial,sans-serif;
+    background-image: url('../img/background_1.jpg');
 }
+
+
 
 
 
