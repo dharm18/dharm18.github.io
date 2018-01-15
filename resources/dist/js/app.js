@@ -143,8 +143,8 @@
         $(".element").typed({
             /*strings: ["Java", "J2EE","Spring","Hibernate","Grails","ZK","JSP","Servlets","Spring MVC","javascript","jQuery","AngularJS",
                 "Oracle","MySQL"],*/
-                strings: ["Java", "J2EE","Grails","ZK","javascript","jQuery","angularJS","JSP","Servlets","Spring MVC",
-                    "Oracle","MySQL","Spring","Hibernate","Want to learn Hadoop/Big data","Interested in data-science, AI"],
+                strings: ["Java", "J2EE","Grails","ZK","Javascript","jQuery","AngularJS","JSP","Servlets","Spring MVC",
+                    "Oracle","MySQL","Spring","Hibernate","Want to learn Hadoop/Big data","Magic in Data-Science, AI, Intelligent Systems"],
             typeSpeed: 30
         });
 
