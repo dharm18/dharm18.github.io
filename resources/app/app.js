@@ -6,7 +6,7 @@
         cfpLoadingBarProvider.includeSpinner = true;
     }]);
 
-    app.config(['$routeProvider',function($routeProvider) {
+    app.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider) {
         $routeProvider
             .when('/', {
                 controller: 'homeController',
@@ -31,6 +31,10 @@
                 templateUrl: 'resources/app/views/skills.html'
             })
             .otherwise({ redirectTo: '/'});
+
+            // if(window.history && window.history.pushState){
+            //     $locationProvider.html5Mode(true);
+            // }
     }]);
 
     app.directive('bsActiveLink', ['$location', function ($location) {
