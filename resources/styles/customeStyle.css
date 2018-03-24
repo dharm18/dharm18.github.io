@@ -1,7 +1,5 @@
 body {
     font-family: "freight-text-pro", sans-serif;
-  //  font-size: 100%;
-// background: #f8f8f8;
 }
 .typed-cursor{
     opacity: 1;
@@ -162,3 +160,4 @@ body {
           color: #333;
     }
 }
+body { padding-top: 70px; }

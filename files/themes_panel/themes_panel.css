@@ -1,0 +1,125 @@
+#themes_panel {
+	position:fixed;
+	top:150px;
+	z-index:9999;
+	font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	opacity:0;
+}
+
+#themes_panel ul, #themes_panel ol {
+	padding:0;
+}
+
+#themes_panel h1,#themes_panel  h2,#themes_panel  h3, #themes_panel h4,#themes_panel  h5,#themes_panel  h6 {
+	color:#e8e8e8;
+	font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	text-transform:none;
+	font-size:14px;
+	margin-bottom:7px;
+	letter-spacing:-1px;
+}
+#themes_menu {
+	float:left;
+	width:254px;
+	color:#444;
+	background:#181818;
+	box-shadow:0px 5px 30px -6px rgba(0, 0, 0, .3);
+}
+#themes_menu .segment {
+	padding:10px;
+	margin-bottom:10px;
+	overflow:hidden;
+	border-bottom:1px solid #222222;
+}
+#themes_menu h4 {
+	font-size:18px;
+	padding:11px 0;
+	background:#333333;
+	line-height:1;
+
+}
+#themes_menu .segment.noborder {
+	border:none;
+}
+#themes_menu ul.theme {
+	margin:4px 0px 0px 0px;
+}
+#themes_menu ul.theme li {
+	float:left;
+}
+#themes_menu ul.theme li a {
+	display:block;
+	margin:0px 5px 5px 0px;
+	line-height:0px;
+	border:1px solid #222;
+	box-shadow:0px 1px 2px #111;
+}
+#themes_menu ul.theme li a:hover {
+	border:1px solid #272727;
+}
+#themes_menu label {
+	display:inline-block;
+	font-weight:bold;
+	min-width:50px;
+}
+#themes_panel select {
+	margin:5px 0;
+	display:inline-block;
+	color:#555;
+	background-color:#f9f9f9;
+}
+#toggle_button {
+	margin:0px;
+	margin-left:-2px;
+	padding:0px;
+	float:left;
+	width:40px;
+	height:40px;
+	background: url("themes_panel.png") no-repeat center center;
+	-moz-border-top-right-radius:2px;
+	border-top-right-radius:2px;
+	-moz-border-bottom-right-radius:2px;
+	border-bottom-right-radius:2px;
+	box-shadow:1px 1px 2px rgba(0, 0, 0, .1);
+}
+#toggle_button a {
+	display:block;
+	padding:14px 0px;
+}
+.reset, .panel_btn {
+	display: inline-block;
+	margin: 10px 10px 10px 0;
+	padding: 7px 10px;
+	background: #414141;
+	color: #fff;
+	font-size: 13px;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+	-webkit-font-smoothing: antialiased;
+	transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-webkit-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	border-radius:2px;	
+}
+
+.reset:hover, 
+.reset:focus,
+.panel_btn:hover, 
+.panel_btn:focus {
+	background: #333333;
+	color: #ffffff;
+	transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-webkit-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	
+}
+
+.panel_btn {
+	padding:10px 7px;
+	font-size:10px;
+	color:#fffff;
+}

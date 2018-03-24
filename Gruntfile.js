@@ -23,6 +23,12 @@ module.exports = function(grunt) {
                     'resources/app/**/*.js'
                 ],
                 dest: 'resources/dist/js/app.js',
+			},
+            onepage: {
+                src: [
+                    'js/*.js','!js/plugins.js'
+                ],
+                dest: 'js/dist/onepage-scripts.js',
             }
         },
     
@@ -31,9 +37,13 @@ module.exports = function(grunt) {
 	            src: 'resources/dist/js/vendor.js',
 	            dest: 'resources/dist/js/vendor.min.js'
 	        },
-	        vendor: {
+	        app: {
 	            src: 'resources/dist/js/app.js',
 	            dest: 'resources/dist/js/app.min.js'
+			},
+			onepage: {
+	            src: 'js/dist/onepage-scripts.js',
+	            dest: 'js/dist/onepage-scripts.min.js'
 	        }
 	    },
 	    
@@ -42,7 +52,12 @@ module.exports = function(grunt) {
     	      files: {
     	         'resources/styles/style.min.css': ['resources/styles/*.css','!resources/styles/style.min.css']
     	      }
-    	  }
+		  },
+		  onepage: {
+			files: {
+			   'css/dist/styles.min.css': ['css/*/*.css','!css/style.min.css']
+			}
+		 }
 	    },
 	    	    
 	    imagemin: {

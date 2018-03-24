@@ -1,174 +1,748 @@
-<!DOCTYPE html>
-<html data-ng-app="app">
-<head lang="en">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="Vdharam : Dharmendra Vishwakarma is a mumbai based software engineer who loves to code.">
-    <meta name="author" content="dharam">
-	<meta name="description" data-itemprop="description" content="Dharmendra Vishwakarma is a mumbai based software engineer who loves to code. He has graduated with B.E.(Information Technology) from University of Mumbai in 2013." />
-	<meta name="keywords" data-itemprop="keywords" content="dharmendra,dharmendra vishwakarma,vdharam,technology,grails,java,zk,development,code,javascript,jquery,angular,spring,hibernate,product development, web development" />
-    <meta name="google-site-verification" content="KyGhzO98lb3MRmGBQgblOgAffiXuhRLc-AL2I0DQJiM" />
-    <link rel="icon" type="image/png" href="resources/images/favicon.ico">
-    <title>vdharam - Dharmendra Vishwakarma | Sr. Software Engineer </title>
-    <!-- Latest compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="resources/styles/bootstrap.min.css">
-    <link rel="stylesheet" href="resources/styles/customeStyle.css">
-    <link rel='stylesheet' href='resources/styles/loading-bar.min.css' type='text/css' media='all' /> -->
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=no">
+        <meta name="description" content="Vdharam : Dharmendra Vishwakarma is a mumbai based software engineer who loves to code.">
+        <meta name="author" content="dharam">
+        <meta name="description" data-itemprop="description" content="Dharmendra Vishwakarma is a mumbai based software engineer who loves to code. He has graduated with B.E.(Information Technology) from University of Mumbai in 2013." />
+        <meta name="keywords" data-itemprop="keywords" content="dharmendra,dharmendra vishwakarma,vdharam,technology,grails,java,zk,development,code,javascript,jquery,angular,spring,hibernate,product development, web development" />
+        <meta name="google-site-verification" content="KyGhzO98lb3MRmGBQgblOgAffiXuhRLc-AL2I0DQJiM" />
+        <link rel="icon" type="image/png" href="favicon.ico">
+        <title>vdharam - Dharmendra Vishwakarma | Sr. Software Engineer </title>
 
-    <!-- Fontawesome core CSS -->
-    <link href="resources/styles/font-awesome.min.css" rel="stylesheet" />
-    <!--GOOGLE FONT -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <!-- Timeline -->
-    <!-- <link href="resources/styles/timeline.css" rel="stylesheet" /> -->
-    <link href="resources/styles/style.min.css" rel="stylesheet" />
-	<script>
-	if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
-		
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	  ga('create', 'UA-77723682-1', 'auto');
-	  ga('send', 'pageview');
-	}
-    </script>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5a5cb7d4d7591465c706c253/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
-    <base href="/">
-</head>
-<body>
-
-    <nav class="navbar" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#/">Dharmendra Vishwakarma <i>~vdharam</i></a>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right" bs-active-link>
-                        <li role="presentation"><a href="#/">Home</a></li>
-                        <li role="presentation"><a href="#/about">About Me</a></li>
-                        <li role="presentation"><a href="#/skills">Skills</a></li>
-                        <li role="presentation"><a href="#/experience">Career</a></li>
-                        <li role="presentation"><a href="#/recommendations">Recommendations</a></li>
-                        <li role="presentation"><a href="https://vdharam.wordpress.com" target="_blank">Blog</a></li>
-                        <li role="presentation"><a href="#/contact">Contact</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
+        <!-- GOOGLE WEB FONTS INCLUDE -->
+	    <link href="http://fonts.googleapis.com/css?family=Oswald|Open+Sans:400,600" rel="stylesheet" type="text/css">
+	
+        <link rel="stylesheet" href="css/skeleton.css" type="text/css">
+        <link rel="stylesheet" href="css/reset.css" type="text/css">    
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/social.css" type="text/css">             
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css">	
+        <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen"/><!-- PrettyPhoto -->	
+        <link rel="stylesheet" href="css/font-awesome.css" type="text/css"/><!-- PrettyPhoto -->    
+        <link rel="stylesheet" href="css/shortcodes.css" type="text/css"/> 	
+        <link rel="stylesheet" href="css/media.css"><!-- Media Queries -->         
         
-	<div class="container">
-    <!-- main view -->
-    <div ng-view></div>
+         <!--link rel="stylesheet" href="files/themes_panel/themes_panel.css"><!-- Theme Panel -->      
+        
+        <link id="layout_color" href="css/light.css" rel="stylesheet" type="text/css"/>  
+        <link id="primary_color_scheme" href="css/colors/blue.css" rel="stylesheet" type="text/css"/>   
 
-    <!-- Hidden contents for SEO-->
-	
-	</div><!-- container-->
-    <!-- Footer -->
-    <hr/>
-    <footer class="pager" >
-    	<div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <span>Copyright &copy; Dharmendra Vishwakarma (vdharam), 2018 &nbsp;&nbsp;| &nbsp;&nbsp;<a href="http://vdharam.com">This site</a> was last updated on 15th January, 2018</span>
+        <!--link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <!-- Fontawesome core CSS -->
+        <link href="resources/styles/font-awesome.min.css" rel="stylesheet" />
+        <!-- Timeline -->
+        <!--link href="resources/styles/timeline.css" rel="stylesheet" />
+        <!---link href="resources/styles/style.min.css" rel="stylesheet" />
+        <link href="resources/styles/blue.css" rel="stylesheet" /> -->
+
+         <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script>
+        if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-77723682-1', 'auto');
+            ga('send', 'pageview');
+        }
+        </script>
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/5a5cb7d4d7591465c706c253/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+        <!--End of Tawk.to Script-->
+        <base href="/">
+    </head>
+    <body class="onepage">
+        <div id="load"></div>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- START PAGE WRAP -->    
+    <div class="page-wrap">
+
+    	<!-- START HOME SECTION -->    
+	<div id="home" class="home-parallax">
+            <div class="home-text-wrapper">
+            
+                <div class="home-logo-text">
+                  <a href="#home">Hi, My name is Dharmendra.</a>
                 </div>
-            </div>
-            <span></span>
-            <div class="row">
-                <div class="col-lg-12">
-                        Connect with me :
-                           <a href="https://in.linkedin.com/pub/dharmendra-vishwakarma/57/17/3a9" target='_blank'>
-                            <i class="fa fa-linkedin"></i> LinkedIn 
-                           </a>
-                        |   <a href="https://twitter.com/vdharm" target='_blank'>
-                            <i class="fa fa-twitter"></i> Twitter
-                           </a>
-                        | <a href="https://github.com/dharm18" target='_blank'>
-                                <i class="fa fa-github"></i> Github
-                            </a>
-                        |
-                            <a href="https://codepen.io/dharm18/" target='_blank'>
-                               <i class="fa  fa-codepen" aria-hidden="true"></i> Codepen
-                            </a>
-                        |
-                            <a href="https://stackoverflow.com/users/5379053/dharmendra-vishwakarma" target='_blank'>
-                               <i class="fa fa-stack-overflow"></i> StackOverflow
-                            </a>
-                        |
-                        <a href="http://freecodecamp.com/dharm18" target='_blank'>
-                            <i class="fa fa-fire fa-fw"></i> Free Code Camp
-                        </a>
-                        |
-                        <a href="https://www.hackerrank.com/dharm18" target='_blank'>
-                            <i class="fa fa-hackerrank"></i> Hackerrank
-                        </a>
-                        |
-                        <a href="https://www.quora.com/profile/Dharmendra-Vishwakarma" target='_blank'>
-                            <i class="fa fa-quora"></i> Quora
-                        </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+                      
+                 <div id="home-slider" class="flexslider">			
+                      <ul class="slides styled-list">
+                      
+                      <li class="home-slide"><p class="home-slide-content">I develop <span class="highlight">smart</span> Apps</p></li>
+                      
+                      <li class="home-slide"><p class="home-slide-content">I am <span class="highlight">tech</span> enthusiast</p></li>
+                      
+                      <li class="home-slide"><p class="home-slide-content">Understands <span class="highlight">code</span> languages</p></li>
+                      
+                      </ul>
+                 </div><!-- END FLEXSLIDER -->
+              </div><!-- END HOME TEXT WRAPPER -->
+           </div><!-- END HOME SECTION -->
+      
+           <!-- START NAVIGATION -->
+            <nav class="light">
+            <!-- START CONTAINER -->	
+             <div class="container clearfix">			
+                 <div class="four columns">			
+                     <!-- START LOGO -->	
+                     <div class="logo large">
+                      <a href="#home"><img src="images/logo-dv.png" title="logo" alt="Logo"/></a>
+                     </div>
+                     <!-- END LOGO -->			
+                 </div><!-- END FOUR COLUMNS -->   
+                 
+                          
+                 <div class="twelve columns">            		
+                     <!-- START NAVIGATION MENU ITEMS -->
+                     <ul class="main-menu large" id="nav">
+                         <li><a href="#home">Home</a></li>                
+                         <li><a href="#about">About</a></li>
+                         <li><a href="#team">Career</a></li>
+                         <li><a href="#services">Skills</a></li>
+                         <li><a href="#parallax3">Recommendations</a></li>
+                         <!--<li><a href="#portfolio">Portfolio</a></li> -->
+                         <li><a href="https://vdharam.wordpress.com" target="_blank">Blog</a></li>                  
+                         <li><a href="#contact">Contact</a></li>
+                     </ul>
+                     <!-- END NAVIGATION MENU ITEMS -->				
+                 </div><!-- END TWELVE COLUMNS -->	
+             </div><!-- END CONTAINER -->	
+           </nav>
+           <!-- END NAVIGATION -->
+
+        <!-- START ABOUT US SECTION -->	
+	<div id="about" class="page">
 	
-	<script src="resources/dist/js/vendor.min.js"></script>
-	<script src="resources/dist/js/app.min.js"></script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- <script src="resources/scripts/jquery.min.js"></script> -->
-    <!-- Include all compiled plugins (below), or include individual files as needed
-    Latest compiled and minified JavaScript -->
-    <!-- <script src="resources/scripts/bootstrap.min.js"></script> -->
-    <!-- <script src="resources/scripts/typed.min.js" type="text/javascript"></script> -->
-    <script>
-        $(function(){
-            $(".element").typed({
-                strings: ["Java", "J2EE","Grails","ZK","javascript","jQuery","angularJS","JSP","Servlets","Spring MVC",
-                    "Oracle","MySQL","Spring","Hibernate","Want to learn Hadoop/Big data","Interested in data-science, AI"],
-                typeSpeed: 30
-            });
-
-            /*var i=1; 
-            setInterval(function(){
-
-                $('body').css("background-image", "linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url('../../resources/dist/images/background_"+i+".jpg')");
-                i = (i+1)%18;
-            },10000);*/
-
-
-        });
-    </script>
+            <div class="container">	
+               <div class="row">	
+                <div class="sixteen columns">            
+                    <!-- START TITLE -->	            
+                    <div class="title">
+                      <h1>About Me</h1>
+                      <div class="subtitle">
+                        <div class="col-lg-2 col-md-2">
+                            <span>
+                                <img src="resources/dist/images/07f4934.jpg" width="120px" height="120px" style="border-radius: 60px"/>
+                            </span>
+                        </div>
+                          <p>My name is <span class="highlight">Dharmendra Vishwakarma</span>. I develop <span class="highlight">web applications</span> using <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">Java</a> technologies. 
+                            I'm Software Engineer from Mumbai, India.</p>
+                          <p></p>
+                      </div><!-- END SUBTITLE -->
+                    </div><!-- END TITLE -->  	                           
+                </div><!-- END SIXTEEN COLUMNS -->  
+               </div><!-- END ROW -->         
+              </div><!-- END CONTAINER -->
+              
     
-    <!-- <script src="resources/scripts/angular.min.js"></script>
-    <script src="resources/scripts/angular-route.min.js"></script>
-    <script src="resources/app/app.js"></script>
-    <script src="resources/app/controllers/contactUsController.js"></script>
-    <script src="resources/app/services/contactUsFactory.js"></script>
-    <script src="resources/app/controllers/homeController.js"></script>
-    <script src="resources/app/controllers/recommendationsController.js"></script>
-    <script src="resources/app/services/recommendationsFactory.js"></script>
-    <script type='text/javascript' src='resources/scripts/loading-bar.min.js'></script>
-    <script src="resources/scripts/angular-animate.min.js"></script> -->
-	
-</body>
+    
+    
+    <div class="fullwidth grey">
+            <div class="container">  
+            <div class="fancy-header2">       
+               <h4>want to know more about me?</h4>
+               <!--<h2 class="highlight">4.9 years of IT experience</h2>-->
+            </div>
+               
+             <div class="row">          
+                    <div class="one-third column">
+                      <div class="service-features">
+                      <div class="img-container">
+                        <img src="images/icons/icons/paperplane.png" alt="Innovative">
+                      </div>  
+                        <h3>Innovative</h3>                
+                        <p> I have a great interest in learning new technologies and cool things in web and mobile that can change the perception of web apps and mobile apps into smart, intelligent system. </p>
+                      </div>               
+                    </div><!-- END ONE THIRD COLUMN -->
+                    
+                    <div class="one-third column">
+                      <div class="service-features">
+                      <div class="img-container">
+                        <img src="images/icons/icons/lab.png" alt="Problem Solver">
+                      </div>                   
+    
+                        <h3>Problem Solver</h3>                
+                        <p>Have acquired Strong problem skills over the years of dedication and patience</p>
+                      </div>               
+                   
+                    </div><!-- END ONE THIRD COLUMNS -->   
+                    
+                    <div class="one-third column">
+                      <div class="service-features">
+                      <div class="img-container">                  
+                        <img src="images/icons/icons/like.png" alt="Perfect">
+                      </div>
+                        <h3>Perfect</h3>                
+                        <p>Idea of being perfect in the task excites me to the core of my heart</p>
+                      </div>               
+                    
+                    </div><!-- END ONE THIRD COLUMNS -->                 
+                     
+                        
+         
+                    
+                </div><!-- END ROW -->                            		
+            </div><!-- END CONTAINER --> 
+            </div>        
+               
+                    
+          
+                
+            <div class="container">  
+    
+                <div class="row">
+                   <div class="sixteen columns">
+                     <h2>How about Some Fun Facts about me?</h2>
+                   </div><!-- END SIXTEEN COLUMNS -->
+                   
+                   <div class="four columns">
+                     <div class="milestone-counter" data-perc="5">
+                       <span class="milestone-count highlight"></span>
+                       <h6 class="milestone-details">Years of Experience</h6>
+                     </div>
+                   </div><!-- END FOUR COLUMNS -->  
+    
+                   <div class="four columns">
+                     <div class="milestone-counter" data-perc="15">
+                       <span class="milestone-count highlight"></span>
+                       <h6 class="milestone-details">Projects</h6>
+                     </div>
+                   </div><!-- END FOUR COLUMNS --> 
+                   
+                   <div class="four columns">
+                     <div class="milestone-counter" data-perc="3">
+                       <span class="milestone-count highlight"></span>
+                       <h6 class="milestone-details">Companies Exposure</h6>
+                     </div>
+                   </div><!-- END FOUR COLUMNS --> 
+                   
+                   <div class="four columns">
+                     <div class="milestone-counter" data-perc="5">
+                       <span class="milestone-count highlight"></span>
+                       <h6 class="milestone-details">Blog Posts</h6>
+                     </div>
+                   </div><!-- END FOUR COLUMNS -->                                                                                   
+               </div><!-- END ROW -->
+            </div><!-- END CONTAINER --> 
+            
+                    
+          </div>
+          <!-- End ABOUT US SECTION -->
+        
+        
+        <!-- START PARALLAX SECTION -->	
+        <div id="parallax1" class="parallax">
+            <div class="bg1 parallax-bg"></div><!-- END PARALLAX BACKGROUND -->
+            <div class="overlay"></div><!-- END PATTERN OVERLAY -->
+            <div class="container clearfix">
+                <div class="parallax-content">
+                    <p class="quote"><i class="icon-quote-left"></i>Everything starts from somewhere.<i class="icon-quote-right"></i></p>
+                    <div class="quote-author">-- Dharmendra Vishwakarma --</div>
+                </div><!-- END PARALLAX CONTENT -->
+            </div><!-- END CONTAINER -->
+        </div>
+        <!-- END PARALLAX SECTION -->
+        
+        
+        <!-- START TEAM SECTION --> 
+        <div id="team" class="page">
+            
+            <div class="container">	
+               <div class="row">	
+                <div class="sixteen columns">            
+                    <!-- START TITLE -->	            
+                    <div class="title">
+                      <h1>Professional & Academic Career</h1>
+                      <div class="subtitle">
+                          <p>“Choose a job you love, and you will never have to work a day in your life.”                            </p>
+                          
+                      </div><!-- END SUBTITLE -->
+                    </div><!-- END TITLE -->  	                           
+                </div><!-- END SIXTEEN COLUMNS -->  
+               </div><!-- END ROW -->         
+              </div><!-- END CONTAINER -->            
+                
+    
+           <div class="fullwidth grey">  
+           
+            <div class="fancy-header2">       
+               <h2 class="highlight">Timeline</h2>
+            </div>     
+                        
+              <div class="container">	
+                 <div class="row">      
+                  <div class="sixteen columns">
+                        <ul class="timeline">
+                                <li class="time-label">
+                                    <span class="bg-light-blue">2016 - Present</span>
+                                </li>
+                                <!-- <li>
+                                    <i class="fa fa-briefcase bg-blue"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"><i class="fa fa-clock-o"></i> 30 October</span>
+                                        <h3 class="timeline-header"><a href="https://www.lntinfotech.com/" target="_blank">LTI- L&t Infotech</a>, Sr. Software Engineer</h3>
+                                        <div class="timeline-body">
+                                            Enhancing my skills in Investment banking. 
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="time-label">
+                                    <span class="bg-light-blue">2016 - 2017</span>
+                                </li> -->
+                                <li>
+                                    <i class="fa fa-briefcase bg-blue"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"><i class="fa fa-clock-o"></i> 16 March</span>
+                                        <h3 class="timeline-header"><a href="http://www.intelliswift.co.in/" target="_blank">Intelliswift Software India Pvt. Ltd.</a>, Sr. Software Engineer</h3>
+                                        <div class="timeline-body">
+                                            Working on development of web applications in banking domain. 
+                                            <ul>
+                                                <li>Appsec implementation, Application integration</li>
+                                                <li>Full stack development.</li>
+                                                <li>Implemented all <a href="https://www.owasp.org">Open Security Standards</a> points.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="time-label">
+                                    <span class="bg-light-blue">2013-2016</span>
+                                </li>
+                
+                                <li>
+                                    <i class="fa fa-briefcase bg-blue"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"><i class="fa fa-clock-o"></i> 1 July</span>
+                                        <h3 class="timeline-header"><a href="http://neebal.com" target="_blank">Neebal Technologies Pvt. Ltd.</a>, Software Engineer</h3>
+                                        <div class="timeline-body">
+                                            Started my professional career as a Associate Software developer.  
+                                            <ul>
+                                                <li>Worked on 10-12 projects with various technologies involved specifically Java, J2EE, Spring, Hibernate, Grails, ZK, Javascript, Jquery and Angular JS.</li>
+                                                <li>Have developed atleast 5-6 projects start from scratch with Full stack development.</li>
+                                                <li>Have been a Tech Lead.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                
+                                <li class="time-label">
+                                                <span class="bg-light-blue"> 2009-2013
+                                                </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-trophy bg-blue"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"><i class="fa fa-clock-o"></i>20 June</span>
+                                        <h3 class="timeline-header"><span style="color:green;font-weight: bold;">Graduated</span>, <a href="http://www.sfitengg.org/" target="_blank">St. Francis Institute Of Technology</a> - Mumbai University</h3>
+                                        <div class="timeline-body">
+                                            Passed graduation with First class with Distinction(72%).
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="time-label">
+                                                <span class="bg-light-blue"> 2007-2009
+                                                </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-thumbs-up bg-blue"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"><i class="fa fa-clock-o"></i>15 June</span>
+                                        <h3 class="timeline-header"><span style="color:green;font-weight: bold;">Cleared</span> M.H.C.E.T. Exam</h3>
+                                        <div class="timeline-body">
+                                            Cleared MHCET exam with good marks(156/200).<i>(good enough for getting admission in Mumbai for year 2009)</i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-flag bg-blue"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"><i class="fa fa-clock-o"></i>1 June</span>
+                                        <h3 class="timeline-header"><span style="color:green;font-weight: bold;">Completed</span> Higher Secondary school(HSC)</h3>
+                                        <div class="timeline-body">
+                                            Completed HSC with <b>2nd Rank(84%)</b> from Shailendra Education Society Jr College(S.E.S).
+                                        </div>
+                                    </div>
+                                </li>
+                
+                
+                                <li class="time-label">
+                                                <span class="bg-light-blue"> 1997-2007
+                                                </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-flag bg-blue"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"><i class="fa fa-clock-o"></i>15 June</span>
+                                        <h3 class="timeline-header"><span style="color:green;font-weight: bold;">Completed</span> Secondary school education(SSC)</h3>
+                                        <div class="timeline-body">
+                                            Completed SSC with <b>1st Rank(88%)</b> from Shakti Seva Sangh Madhyamik Vidyalaya(S.S.S.M.V.).
+                                        </div>
+                                    </div>
+                                </li>
+                
+                                <li class="time-label">
+                                                <span class="bg-light-blue"> Year 1991
+                                                </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-eye bg-blue"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"><i class="fa fa-clock-o"></i>18 October</span>
+                                        <h3 class="timeline-header"><span style="color:green;font-weight: bold;">Born</span>, Mumbai,India</h3>
+                                        <div class="timeline-body">
+                                            Everything starts from somewhere!
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-clock-o"></i>
+                                </li>
+                            </ul>  
+                  </div>
+              </div> <!-- END ROW -->     
+             </div><!-- END CONTAINER --> 
+           </div>
+    
+        </div>
+        <!-- END TEAM SECTION --> 
+        
+        <!-- START SERVICES SECTION -->
+        <div id="services" class="page">    
+                     
+          
+            <div class="container">	
+               <div class="row">	
+                <div class="sixteen columns">            
+                    <!-- START TITLE -->	            
+                    <div class="title">
+                      <h1>Technical Skills</h1>
+                      <div class="subtitle">
+                          <p>Programming langauges are just <span class="highlight">tools</span> to solve problems.</p>
+                      </div><!-- END SUBTITLE -->
+                    </div><!-- END TITLE -->  	                           
+                </div><!-- END SIXTEEN COLUMNS -->  
+               </div><!-- END ROW -->         
+              </div><!-- END CONTAINER -->       
+    
+    <div class="fullwidth grey">       
+              
+            <div class="container clearfix">
+              <div class="row">
+                    <div class="eight columns">
+                            <h3>Computer Languages & Tools</h3>  
+                              <div class="tabset">
+                              
+                                    <ul class="tabs styled-list">
+                                      <li class="tab"><a href="#panel1" class="selected"><i class="icon-tags"></i> Programming Languages</a></li>
+                                      <li class="tab"><a href="#panel2" class=""><i class="icon-cogs"></i>Tools</a></li>
+                                    </ul>
+                                    
+                                    <div class="panel" id="panel1">
+                                       <p>
+                                        <table class="table">
+                                            <tr>
+                                                <td class="bg-light-blue">Computer Languages :</td><td>Java (Core Java, J2EE), Javascript, SQL, PL-SQL</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-light-blue">Frameworks :</td><td>Spring, Hibernate, Grails, ZK, NodeJS, GWT</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-light-blue">CMS :</td><td>Liferay CE (v 6.0.6)</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-light-blue">Database :</td><td>Oracle (10g,11g), MySQL, NoSQL</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-light-blue">Web Technology :</td><td>HTML, CSS, JavaScript, JQuery, AJAX, Angular JS, XML, JSON, Angular 4</td>
+                                            </tr>
+                                        </table>
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="panel" id="panel2">
+                                       <p><table class="table">
+                                            <tr>
+                                                <td class="bg-light-blue">Operating System :</td><td>Windows(XP,7 & 8), Linux (Ubuntu 15.10, CentOS 6.6)</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-light-blue">IDE :</td><td>Eclipse, GGTS, STS, Netbeans, Visual Studio</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-light-blue">Text Editor :</td><td>Sublime Text, Notepad++, Gedit, Brackets</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-light-blue">Version Control :</td><td>Tortoise SVN, Subclipse, Git</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-light-blue">Web/App Server :</td><td>Apache Tomcat, Glassfish</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-light-blue">Tools :</td><td>Oracle Sql Developer, Toad, PMP, Sonarlint, FindBug</td>
+                                            </tr>
+                                        </table></p>
+                                    </div>
+                                    
+                              </div> <!-- END OF TABSET -->               
+                            </div> <!-- END OF COLUMN -->   
+                            
+                          <div class="eight columns">
+                                 <h3>Proficiency Level</h3>  
+                                  <div class="skillbar" data-perc="85">
+                                      <div class="skill-title">JAVA 85%</div>
+                                      <div class="skill-percentage"></div>
+                                  </div>
+                                  
+                                  <div class="skillbar" data-perc="70">
+                                      <div class="skill-title">System Design 70%</div>
+                                      <div class="skill-percentage"></div>
+                                  </div>
+                                  
+                                  <div class="skillbar" data-perc="70">
+                                      <div class="skill-title">Database 70%</div>
+                                      <div class="skill-percentage"></div>
+                                  </div>
+                                  
+                                  <div class="skillbar" data-perc="90">
+                                      <div class="skill-title">Programming 90%</div>                      
+                                      <div class="skill-percentage"></div>
+                                  </div> 
+                  
+                             </div> <!-- END OF COLUMN -->                                   
+
+                             
+              </div>  <!-- END ROW -->  
+            </div> <!-- END CONTAINER -->  
+                       
+    </div>
+            <div class="container clearfix">
+                
+                <div class="sixteen columns">
+                
+                <h3>Are you ready to start a conversation?</h3>  <a href="#contact" class="button scroll-to">Get in touch</a>
+                 </div><!-- END SIXTEEN COLUMNS --> 
+               </div><!-- END CONTAINER -->       
+    
+        </div>
+        <!-- END SERVICES SECTION -->
+        
+        
+        <!-- START PARALLAX SECTION -->
+        <div id="parallax3" class="parallax">
+            <div class="bg3 parallax-bg"></div><!-- END PARALLAX BACKGROUND -->
+            <div class="overlay"></div><!-- END PATTERN OVERLAY -->
+            <div class="container clearfix">
+                    <div class="parallax-content">
+        <div class="testimonial-slider flexslider"><p class="testimonial-icon"><i class="icon-quote-left"></i></p><h3 class="title"><span>Recommendations</span></h3>
+          <ul class="slides styled-list">
+          
+          <li class="testimonial-slide"><p class="client-testimonial">Dharm is a proactive and tireless contributor who would make a great addition to any team. His skills on various technologies makes him stand alone unique from the crowd. I have seen his handful of work implemented in making the software applications. Always enthusiastic in learning something new. I would highly recommend him for any position, as he naturally rises to the occasion when presented with something he is passionate about.</p><div class="client-info">Nishma Bhavsar,Business Analyst,Neebal Technologies Pvt Ltd</div></li>
+          
+          <li class="testimonial-slide"><p class="client-testimonial">Having worked with Dharmendra at Neebal technologies for over a year the following is what I observed.
+ 
+                Dharmendra is someone who takes the time to understand the business requirements and process before he starts development. This way he is able to get in a couple of suggestions and ideas whether it be from the Technology stack or inputs to the business process.
+                He is one of the few ones who despite the tight timelines will go the extra mile to give an additional feature that helps.
+                A great mentor for someone looking to learn any technology in the development stack. Have yet to meet someone who can debug and solve an issue as quickly and efficiently as him.</p><div class="client-info">Abishai Dmello,Software Engineer,Neebal Technologies Pvt. Ltd.</div></li>
+          
+          <li class="testimonial-slide"><p class="client-testimonial">Dharmendra is a very smart individual who has a good grip on the latest Java technologies. The wide variety of projects he has worked on has helped him garner a good amount of knowledge. His determination to complete the project on time and with perfection has helped provide a great customer satisfaction in his stint as a Developer in Neebal Technologies.</p><div class="client-info">Shashidhar Pamarthi,Software Developer,Neebal Technologies Pvt. Ltd.</div></li>
+          <li class="testimonial-slide"><p class="client-testimonial">I have worked with Dharam for almost over a year and the learnings I got from him is tremendous. He is a very technical guy with good knowledge of business development which is important from development perspective. Database queries is one of his strength. He passion towards learning new technology encourages to go further and try new things.</p><div class="client-info">Hitesh Baid,Software Engineer,Neebal Technologies Pvt. Ltd.</div></li>
+          </ul>
+    </div>
+    
+                    </div><!-- END PARALLAX CONTENT -->
+                </div><!-- END CONTAINER -->
+         </div>
+        <!-- END PARALLAX SECTION -->
+        
+        <!-- START PARALLAX SECTION -->
+        <div id="parallax4" class="parallax">
+            <div class="bg4 parallax-bg"></div><!-- END PARALLAX BACKGROUND -->
+            <div class="overlay"></div><!-- END PATTERN OVERLAY -->
+            <div class="container clearfix">
+                    <div class="parallax-content">
+             <!-- START CONTACT DETAILS -->
+             <div class="contact-details">
+               <h2>vishdharm.181910+WWW AT Gmail DOT com</h2>
+               <h2>Mumbai, India</h2>
+            </div>			
+            <!-- END CONTACT DETAILS -->
+                    </div><!-- END PARALLAX CONTENT -->
+                </div><!-- END CONTAINER -->
+         </div>
+        <!-- END PARALLAX SECTION -->	
+        
+        <!-- START CONTACT SECTION -->
+        <div id="contact" class="page">
+        
+            <div class="container">	
+               <div class="row">	
+                <div class="sixteen columns">            
+                    <!-- START TITLE -->	            
+                    <div class="title">
+                      <h1>Contact Me</h1>
+                      <div class="subtitle">
+                          <p>I'd really love to <span class="highlight">hear from you</span> so why not drop me an email or send a message through a chat window. <span class="highlight">I'll get back</span> to you as soon as we can.</p>
+                      </div><!-- END SUBTITLE -->
+                    </div><!-- END TITLE -->  	                           
+                </div><!-- END SIXTEEN COLUMNS -->  
+               </div><!-- END ROW -->         
+              </div><!-- END CONTAINER -->         
+     
+          <!-- START COPYRIGHT SECTION -->   	
+           <div class="copyright">
+         <div class="container clearfix">
+            <div class="sixteen columns">   
+            <div class="copyright-logo"><a href="#"><img src="images/logo-dv-footer.png" title="logo" alt="logo"/></a></div>   
+               <div class="social-icons">
+                  <div class="social-icon social-email"><a href="mailto:vishdharm.181910+www@example.com" target="_blank" data-original-title="Email">Email</a></div>
+                  <div class="social-icon social-linkedin"><a href="https://in.linkedin.com/pub/dharmendra-vishwakarma/57/17/3a9" target="_blank" data-original-title="LinkedIn">LinkedIn</a></div>
+                  <div class="social-icon social-twitter"><a href="https://twitter.com/vdharm" target="_blank" data-original-title="Twitter">Twitter</a></div>
+                  <div class="social-icon social-github"><a href="https://github.com/dharm18" target="_blank" data-original-title="Github">Github</a></div>
+                  <div class="social-icon social-lastfm"><a href="https://stackoverflow.com/users/5379053/dharmendra-vishwakarma" target="_blank" data-original-title="StackOverflow">StackOverflow</a></div>
+                  <div class="social-icon social-wordpress"><a href="https://vdharam.wordpress.com" target="_blank" data-original-title="wordpress">wordpress</a></div>
+                  <div class="social-icon social-forrst"><a href="http://freecodecamp.com/dharm18" target="_blank" data-original-title="Freecodecamp">Freecodecamp</a></div>
+               </div>
+                <p>Copyright &copy; Dharmendra Vishwakarma (vdharam), 2018 &nbsp;&nbsp;| &nbsp;&nbsp;<a href="http://vdharam.com">This site</a> was last updated on 15th January, 2018</p>
+                <p>                        Connect with me :
+                        <a href="https://in.linkedin.com/pub/dharmendra-vishwakarma/57/17/3a9" target='_blank'>
+                         <i class="fa fa-linkedin"></i> LinkedIn 
+                        </a>
+                     |   <a href="https://twitter.com/vdharm" target='_blank'>
+                         <i class="fa fa-twitter"></i> Twitter
+                        </a>
+                     | <a href="https://github.com/dharm18" target='_blank'>
+                             <i class="fa fa-github"></i> Github
+                         </a>
+                     |
+                         <a href="https://codepen.io/dharm18/" target='_blank'>
+                            <i class="fa  fa-codepen" aria-hidden="true"></i> Codepen
+                         </a>
+                     |
+                         <a href="https://stackoverflow.com/users/5379053/dharmendra-vishwakarma" target='_blank'>
+                            <i class="fa fa-stack-overflow"></i> StackOverflow
+                         </a>
+                     |
+                     <a href="http://freecodecamp.com/dharm18" target='_blank'>
+                         <i class="fa fa-fire fa-fw"></i> Free Code Camp
+                     </a>
+                     |
+                     <a href="https://www.hackerrank.com/dharm18" target='_blank'>
+                         <i class="fa fa-hackerrank"></i> Hackerrank
+                     </a>
+                     |
+                     <a href="https://www.quora.com/profile/Dharmendra-Vishwakarma" target='_blank'>
+                         <i class="fa fa-quora"></i> Quora
+                     </a>
+                </p>
+                
+             </div> <!-- END SIXTEEN COLUMNS -->        
+          </div><!-- END CONTAINER -->
+         </div>
+         <!-- END COPYRIGHT SECTION -->	 
+          
+        </div>
+        <!-- END CONTACT SECTION -->		
+        
+        
+       </div><!-- END PAGE WRAP -->
+       
+    
+          <!-- BEGIN THEME PANEL -->
+        <div id="themes_panel" style="display: none;">
+            <div id="themes_menu">
+            <h4 style="text-align:center;">Style Switcher</h4>
+            
+                <div class="segment">
+                <h5>Layout Type</h5>
+                    <ul class="theme cookie_layout_style">
+                        <li><a href="#" title="parallax" class="panel_btn">Parallax Version</a></li>                   
+                        <li><a href="#" title="color-block" class="panel_btn">Colored Version</a></li>                
+                      </ul>
+                </div>         
+                <div class="segment">
+                <h5>Layout Color</h5>
+                    <ul class="theme cookie_layout_color">                            
+                        <li><a href="#" title="light" style="background: white; width: 30px; height: 15px;"></a></li>
+                        <li><a href="#" title="dark" style="background: black; width: 30px; height: 15px;"></a></li>
+                      </ul>
+                </div>   
+    
+                <div class="segment">
+                <h5>Menu Style</h5>
+                    <ul class="theme cookie_menu_style">                            
+                        <li><a href="#" title="large" class="panel_btn">Large Menu</a></li>                   
+                        <li><a href="#" title="small" class="panel_btn">Small Menu</a></li> 
+                      </ul>
+                </div> 
+                
+                <div class="segment">
+                <h5>Menu Color</h5>
+                    <ul class="theme cookie_menu_color">                            
+                        <li><a href="#" title="light" style="background: white; width: 30px; height: 15px;"></a></li>
+                        <li><a href="#" title="dark" style="background: black; width: 30px; height: 15px;"></a></li>
+                      </ul>
+                </div>                  
+    
+                <div class="segment">
+            <h5>Color Skins</h5>
+                    <ul class="theme cookie_colors">           
+                        <li><a href="#" title="blue" style="background: steelblue; width: 30px; height: 15px;"></a></li> 
+                        <li><a href="#" title="mediumaquamarine" style="background: mediumaquamarine; width: 30px; height: 15px;"></a></li>  
+                        <li><a href="#" title="tomato" style="background: tomato; width: 30px; height: 15px;"></a></li>  
+                        <li><a href="#" title="yellow" style="background: #FFD600; width: 30px; height: 15px;"></a></li>  
+                        <li><a href="#" title="green" style="background: #a0ce4e; width: 30px; height: 15px;"></a></li>  
+                        <li><a href="#" title="darksalmon" style="background: darksalmon; width: 30px; height: 15px;"></a></li>                                  
+                      </ul>
+                </div>                   
+                <div class="segment noborder">
+                    <a class="reset" href="#">Click to Reset</a>
+                </div>
+            </div>
+            <div id="toggle_button"><a href="#"></a></div>
+        </div>
+    <!-- END THEME PANEL -->       
+    
+        <!-- JARVIS THEME SCRIPTS -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>  
+        <script type="text/javascript" src="js/jquery.queryloader2.js"></script>        
+        <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>  
+        <script type="text/javascript" src="js/jquery.fitvids.js"></script>  
+        <script type="text/javascript" src="js/jquery.appear.js"></script>  
+        <script type="text/javascript" src="js/jquery.slabtext.min.js"></script>   
+        <script type="text/javascript" src="js/jquery.fittext.js"></script>   
+        <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+        <script type="text/javascript" src="js/jquery.sticky.js"></script>
+        <script type="text/javascript" src="js/selectnav.min.js"></script>    
+        <script type="text/javascript" src="js/SmoothScroll.js"></script>   
+        <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>    
+        <script type="text/javascript" src="js/isotope.js"></script>   
+        <script type="text/javascript" src="js/bootstrap-modal.js"></script>   
+        <script type="text/javascript" src="js/shortcodes.js"></script>        
+        <script type="text/javascript" src="js/scripts.js"></script>               
+        <!-- Themes Panel -->
+        <script src="files/themes_panel/themes_panel.js"></script>
+        <!-- /Themes Panel -->                
+         
+    </body>
 </html>
