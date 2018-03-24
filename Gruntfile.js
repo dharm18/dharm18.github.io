@@ -60,7 +60,7 @@ module.exports = function(grunt) {
 		  },
 		  onepage: {
 			files: {
-			   'css/styles.min.css': ['css/*.css','!css/styles.min.css','!css/main.css','!css/normalize.css']
+			   'css/styles.min.css': ['css/skeleton.css','css/reset.css','css/style.css','css/social.css','css/flexslider.css','css/prettyPhoto.css','css/font-awesome.css','css/shortcodes.css','css/media.css','css/light.css']
 			}
 		 }
 	    },
