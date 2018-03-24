@@ -26,7 +26,12 @@ module.exports = function(grunt) {
 			},
             onepage: {
                 src: [
-                    'js/*.js','!js/plugins.js'
+					'js/vendor/jquery.min.js','js/jquery.queryloader2.js','js/modernizr-2.6.2.min.js',
+					'js/jquery.fitvids.js','js/jquery.appear.js','js/jquery.slabtext.min.js',
+					'js/jquery.fittext.js','js/jquery.easing.min.js','js/jquery.parallax-1.1.3.js',
+					'js/jquery.prettyPhoto.js','js/jquery.sticky.js','js/selectnav.min.js',
+					'js/SmoothScroll.js','js/jquery.flexslider-min.js','js/isotope.js','js/bootstrap-modal.js',
+					'js/shortcodes.js','js/scripts.js'
                 ],
                 dest: 'js/dist/onepage-scripts.js',
             }
@@ -55,7 +60,7 @@ module.exports = function(grunt) {
 		  },
 		  onepage: {
 			files: {
-			   'css/dist/styles.min.css': ['css/*/*.css','!css/style.min.css']
+			   'css/styles.min.css': ['css/*.css','!css/styles.min.css','!css/main.css','!css/normalize.css']
 			}
 		 }
 	    },
@@ -64,9 +69,9 @@ module.exports = function(grunt) {
 	        dynamic: {
 	            files: [{
 	                expand: true,
-	                cwd: 'resources/images',
+	                cwd: 'images/parallax/',
 	                src: ['**/*.{png,jpg,gif}'],
-	                dest: 'resources/dist/images/'
+	                dest: 'images/parallax/dist/'
 	            }]
 	        }
 	    },
