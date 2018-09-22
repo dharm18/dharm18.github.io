@@ -122,6 +122,7 @@ var init = function() {
 	  
 };	
 
+console.log('%c Hi Folks!!! \n\nLooks like there is a developer who is visiting another developer\'s website.Let\'s collabrate and build something great together.\n If you are a company wants skillfull resources. Let\'s connect with me from contact us page. \n\nThank you!', 'background: #222; color: #bada55');
 
   jQuery(window).load(function(){   
   jQuery(document).ready(function($){     
