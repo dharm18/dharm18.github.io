@@ -2872,7 +2872,34 @@ $(window).load(function(){
         decimals: 0,  // the number of decimal places to show
         onUpdate: null,  // callback method for every time the element is updated,
         onComplete: null,  // callback method for when the element finishes updating
-    };
+	};
+	
+	$.ajax({
+		url:"https://public-api.wordpress.com/rest/v1/sites/vdharam.wordpress.com/posts/?number=3",
+		dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
+		success:function(json){
+			console.log(json);
+			var blogs=[];
+			$.each(json.posts,function(i,element){
+				blogs.push({'date':element.modified.substring(0,10),'url':element.url,'title':element.title,'text':element.content.substring(0,300)})
+			});
+			$('.blog_url').each(function(index){
+				$(this).attr('href',blogs[index].url);
+				$(this).text(blogs[index].title);
+			});
+			$('.blog_text').each(function(index){
+				$(this).html(blogs[index].text+"....");
+			});
+			$('.blog_date').each(function(index){
+				$(this).html(blogs[index].date);
+			});
+			
+		},
+		error:function(){
+			console.log("Error");
+		}      
+   });
+
 })(jQuery);
 
 	 
