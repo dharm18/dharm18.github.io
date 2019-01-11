@@ -2893,7 +2893,7 @@ $(window).load(function(){
 			$('.blog_date').each(function(index){
 				$(this).html(blogs[index].date);
 			});
-			
+			$("#blog_post_count").attr('data-perc',json.found);
 		},
 		error:function(){
 			console.log("Error");

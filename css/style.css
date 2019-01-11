@@ -1719,3 +1719,68 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 * + html .title h1 {
   display: inline;
 }
+  
+  .breadcrumb ul, li {
+	padding: 0;
+	list-style:none;
+	font-family: 'BebasNeueRegular', sans-serif !important;
+	font-size: 16px !important;
+  }
+  
+  .breadcrumb li {
+	display: inline-block;
+	position: relative;
+	margin:0 .5em ;
+  }
+  
+  .breadcrumb a {
+	display: block;
+	height:2em;
+	line-height:2em;
+	text-decoration: none;
+	background-color: lightblue;
+	padding:0 1em;
+  }
+  
+  .breadcrumb li:before,
+  .breadcrumb li:after {
+	position: absolute;
+	content:"";
+	top:0;
+	width:0;
+	height:0;
+  }
+  
+  .breadcrumb li:after {
+	left:100%;
+	border: 1em solid transparent;
+	border-left-color:lightblue;
+  }
+  
+  .breadcrumb li:before {
+	right:calc(100% - 1em);
+	border: 1em solid lightblue;
+	border-left-color:transparent;
+  }
+  
+  .breadcrumb li.current:after {
+	border-left-color:#00f;
+  }
+  
+  .breadcrumb li.current:before {
+	border: 1em solid blue;
+	border-left-color:transparent;
+  }
+  
+  .breadcrumb li:first-of-type:before {
+	  border-left-color:lightblue;
+  }
+  
+  .breadcrumb li.current:first-of-type:before {
+	  border-left-color:blue;
+  }
+  
+  .breadcrumb li.current a {
+	background-color: #00f;
+	color:white;
+  }
