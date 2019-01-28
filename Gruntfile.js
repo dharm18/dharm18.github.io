@@ -70,15 +70,15 @@ module.exports = function(grunt) {
 	            files: [{
 	                expand: true,
 	                cwd: 'images/',
-	                src: ['**/*.{png,jpg,gif}'],
-	                dest: 'images/dist/'
+	                src: ['**/*.{png,jpg,gif}','!images/dist/*.*'],
+	                dest: 'images/dist'
 	            }]
 	        }
 	    },
 	    watch: {
 	        scripts: {
-	            files: ['resources/scripts/*.js','resources/app/*/*.js'],
-	            tasks: ['concat', 'uglify'],
+	            files: ['js/scripts.js','css/style.css'],
+	            tasks: ['concat', 'uglify','cssmin'],
 	            options: {
 	                spawn: false,
 	            },
@@ -95,7 +95,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'uglify','cssmin','imagemin']);
+	//grunt.registerTask('default', ['concat', 'uglify','cssmin','imagemin']);
+	grunt.registerTask('default', ['concat', 'uglify','cssmin']);
 
 
 };
