@@ -5,3 +5,10 @@ Personal static website, created using HTML, CSS and Javascript and it is curren
 This website contains the general overview of my portfolio and links to various accounts.
 
 Please feel free to suggest, review and comment if you encounter any issues while browsing it.
+
+This personal website built for showcasing the skills and achievements. This also includes my experimentations with various ideas and thoughts. This project was initially a web app built on spring technology hosted on open shift free tier service but later due to end of OpenShift developer version 1, the static website is hosted on Github as a GitHub pages features. Some of the features of the site are as follows
+- Projects listing on the website.
+- New UI design adopted.
+- Tawk.To integration for a quick chat.
+- User navigation pages design.
+- Dynamic logic for showing the latest Wordpress blog posts.
