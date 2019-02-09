@@ -5,12 +5,14 @@
     "grunt": "^0.4.1",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-cssmin": "^1.0.2",
-    "grunt-contrib-imagemin": "^3.0.0",
+    "grunt-contrib-imagemin": "^3.1.0",
     "grunt-contrib-uglify": "^2.3.0",
     "grunt-contrib-watch": "^1.1.0"
   },
   "dependencies": {
     "http-server": "^0.11.1",
-    "live-server": "^1.2.0"
+    "live-server": "^1.2.1",
+    "lodash": "^4.17.11",
+    "minimatch": "^3.0.4"
   }
 }
