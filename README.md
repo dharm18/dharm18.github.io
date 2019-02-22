@@ -12,3 +12,14 @@ This personal website built for showcasing the skills and achievements. This als
 - Tawk.To integration for a quick chat.
 - User navigation pages design.
 - Dynamic logic for showing the latest Wordpress blog posts.
+
+The website has following menus which allows anyone to navigate and access profile.
+- **Home**: Overview of entire portfolio. Further menu gives more detailed and intuitive information. 
+- **About**
+- **Career**
+- **Skills**
+- **Recommendations**
+- **Projects**
+- **Resume**
+- **Blog**
+- **Contact**
