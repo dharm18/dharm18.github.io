@@ -14,8 +14,8 @@ This personal website built for showcasing the skills and achievements. This als
 - Dynamic logic for showing the latest Wordpress blog posts.
 
 The website has following menus which allows anyone to navigate and access profile.
-- **Home**: Overview of entire portfolio. Further menu gives more detailed and intuitive information. 
-- **About**
+- [**Home**](https://www.vdharam.com/): Overview of entire portfolio. Further menu gives more detailed and intuitive information. 
+- **About**: Detailed description about myself.
 - **Career**
 - **Skills**
 - **Recommendations**
