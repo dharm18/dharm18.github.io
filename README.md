@@ -15,7 +15,7 @@ This personal website built for showcasing the skills and achievements. This als
 
 The website has following menus which allows anyone to navigate and access profile.
 - [**Home**](https://www.vdharam.com/): Overview of entire portfolio. Further menu gives more detailed and intuitive information. 
-- **About**: Detailed description about myself.
+- **[About](https://www.vdharam.com/about-me/)**: Detailed description about myself.
 - **Career**
 - **Skills**
 - **Recommendations**
