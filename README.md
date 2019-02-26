@@ -19,7 +19,7 @@ The website has following menus which allows anyone to navigate and access profi
 - **[Career](https://www.vdharam.com/career)**:Describes the academic and professional career.
 - **[Skills](https://www.vdharam.com/#services)**:explains technical skills.
 - **[Recommendations](https://www.vdharam.com/#services)**
-- **Projects**
+- **[Projects](https://www.vdharam.com/project)**
 - **Resume**
-- **Blog**
+- **[Blog](vdharam.wordpress.com)**
 - **Contact**
