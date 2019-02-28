@@ -18,8 +18,8 @@ The website has following menus which allows anyone to navigate and access profi
 - **[About](https://www.vdharam.com/about-me/)**: Detailed description about myself.
 - **[Career](https://www.vdharam.com/career)**:Describes the academic and professional career.
 - **[Skills](https://www.vdharam.com/#services)**:explains technical skills.
-- **[Recommendations](https://www.vdharam.com/#services)**
-- **[Projects](https://www.vdharam.com/project)**
-- **Resume**
-- **[Blog](vdharam.wordpress.com)**
-- **Contact**
+- **[Recommendations](https://www.vdharam.com/#services)**:These are recommendations that various co-workers and friends have provided.
+- **[Projects](https://www.vdharam.com/project)**:Lists academic and professional projects.
+- **Resume**:Link to Resume
+- **[Blog](vdharam.wordpress.com)**:Professional blogging
+- **Contact**:You can contact me here.
