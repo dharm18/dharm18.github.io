@@ -1,4 +1,4 @@
-# dharm18.github.io
+# dharm18.github.io [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
 ## About
 Personal static website, created using HTML, CSS and Javascript and it is currently hosted on github.io pages. It can be accessible through http://www.vdharam.com or https://dharm18.github.io
