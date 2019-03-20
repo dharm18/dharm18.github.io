@@ -1,5 +1,6 @@
 # dharm18.github.io
 
+## About
 Personal static website, created using HTML, CSS and Javascript and it is currently hosted on github.io pages. It can be accessible through http://www.vdharam.com or https://dharm18.github.io
 
 This website contains the general overview of my portfolio and links to various accounts.
@@ -23,3 +24,13 @@ The website has following menus which allows anyone to navigate and access profi
 - **Resume**:Link to Resume
 - **[Blog](vdharam.wordpress.com)**:Professional blogging
 - **Contact**:You can contact me here.
+
+
+## Author
+[Dharmendra Vishwakarma](http://vdharam.com) - [@dharm18](https://github.com/dharm18)
+
+## Issues
+Please create a new [issue](https://github.com/dharm18/dharm18.github.io/issues) if you found any bugs or suggestions to implement. 
+
+## License
+This work is distributed under the [MIT license](https://opensource.org/licenses/MIT) see the [LICENSE](LICENSE.txt) file for details.
