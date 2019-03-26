@@ -229,8 +229,42 @@
                </div><!-- END ROW -->
             </div><!-- END CONTAINER --> 
             
+
+            
                     
           </div>
+
+          
+    <div class="grey">
+        <div class="container">
+
+            <div class="fancy-header2">       
+                <h2 class="heading">Github Contributions</h2>
+            </div>
+            <div class="row">
+             <!-- Start Github Contributions -->
+            <div id="github-graph" class="background-alt">
+                    
+                    <script
+                        src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
+                    >
+                    </script>
+            
+                    <link
+                        rel="stylesheet"
+                        href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
+                    />
+            
+                    <div class="calendar"></div>
+            
+                    <script>
+                        new GitHubCalendar(".calendar", "dharm18", { responsive: true });
+                    </script>
+                </div>
+                <!-- End Github Contributions -->
+            </div>
+        </div>
+    </div>
           <!-- End ABOUT US SECTION -->
         
         
@@ -704,7 +738,55 @@
                     </div><!-- END TITLE -->  	                           
                 </div><!-- END SIXTEEN COLUMNS -->  
                </div><!-- END ROW -->         
-              </div><!-- END CONTAINER -->         
+              </div><!-- END CONTAINER -->
+              
+              <div class="container clearfix">
+                <div class="sixteen columns">
+                    
+           <!-- START CONTACT BOX -->
+          <div class="contact-box">
+            <!-- START CONTACT FORM -->
+             <div id="-form">			
+                <form action="https://formspree.io/vishdharm.181910+www@gmail.com" method="POST">
+               
+                    <div id="contact-input">
+                     <!--[if IE]>
+                        <label for="name">Name</label>
+                    <![endif]-->
+                      <input type="text" name="contact[name]" id="name" placeholder="Name (required)" >
+                       <!--[if IE]>
+                               <label for="email">Email</label>
+                        <![endif]-->
+                      <input type="text" name="contact[email]" id="email" placeholder="Email (required)">
+                       <!--[if IE]>
+                               <label for="subject">Subject</label>
+                        <![endif]-->
+                      <input type="text" name="contact[subject]" id="subject" placeholder="Subject" >
+                    </div>
+                    <div id="contact-textarea">
+                     <!--[if IE]>
+                               <label for="message">Your Message Here</label>
+                        <![endif]-->
+                      <textarea name="contact[message]" id="message" cols="39" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <div id="contact-submit">
+                      <div>
+                        <input name="submit" type="submit" id="submit" tabindex="5" value="Post Comment" class="comment-submit small button">
+                      </div>
+                    </div>
+                  </form> 
+             <div class="clear"></div>
+              </div>
+               <div class="result"></div>  
+            <!-- END CONTACT FORM -->
+        
+                
+            </div>
+    
+            <!-- END CONTACT BOX -->
+            </div> <!-- END SIXTEEN COLUMNS -->        
+        </div><!-- END CONTAINER -->
+     
      
           <!-- START COPYRIGHT SECTION -->   	
            <div class="copyright">

@@ -284,7 +284,7 @@ function home_parallax() {
 /*----------------------------------------------------*/
 // CONTACT FORM WIDGET
 /*----------------------------------------------------*/
-
+/*
     $("#contact form").submit(function()
     {
         var form = $(this);
@@ -326,7 +326,7 @@ function home_parallax() {
         })
         return false;
     });
-	
+	*/
 
   
 
