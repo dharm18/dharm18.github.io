@@ -1,5 +1,7 @@
 # dharm18.github.io/
 
 # Allow crawling of all content
+Sitemap: https://www.vdharam.com/sitemap.xml
+
 User-agent: *
 Disallow:
