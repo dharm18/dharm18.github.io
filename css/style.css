@@ -1784,9 +1784,3 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 	background-color: #00f;
 	color:white;
   }
-
-  div.page {
-	background-image: url("/images/christmas-snow-background.jpg");
-	width: 100%;
-	background-size: cover;
-}  

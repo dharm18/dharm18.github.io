@@ -14,7 +14,7 @@ module.exports = function(grunt) {
                     'resources/scripts/angular.min.js',
                     'resources/scripts/angular-route.min.js',
                     'resources/scripts/angular-animate.min.js',
-                    'resources/scripts/loading-bar.min.js'
+					'resources/scripts/loading-bar.min.js'
                 ],
                 dest: 'resources/dist/js/vendor.js',
             },
@@ -31,6 +31,7 @@ module.exports = function(grunt) {
 					'js/jquery.fittext.js','js/jquery.easing.min.js','js/jquery.parallax-1.1.3.js',
 					'js/jquery.prettyPhoto.js','js/jquery.sticky.js','js/selectnav.min.js',
 					'js/SmoothScroll.js','js/jquery.flexslider-min.js','js/isotope.js','js/bootstrap-modal.js',
+					'js/particles.min.js',
 					'js/shortcodes.js','js/scripts.js'
                 ],
                 dest: 'js/dist/onepage-scripts.js',

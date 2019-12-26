@@ -831,31 +831,166 @@ $(window).load(function(){
         onComplete: null,  // callback method for when the element finishes updating
 	};
 	
-	$.ajax({
-		url:"https://public-api.wordpress.com/rest/v1/sites/vdharam.wordpress.com/posts/?number=3",
-		dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
-		success:function(json){
-			console.log(json);
-			var blogs=[];
-			$.each(json.posts,function(i,element){
-				blogs.push({'date':element.modified.substring(0,10),'url':element.url,'title':element.title,'text':element.content.substring(0,300)})
+	if(window.location.pathname+window.location.search === "/") {
+		$.ajax({
+			url:"https://public-api.wordpress.com/rest/v1/sites/vdharam.wordpress.com/posts/?number=3",
+			dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
+			success:function(json){
+				console.log(json);
+				var blogs=[];
+				$.each(json.posts,function(i,element){
+					blogs.push({'date':element.modified.substring(0,10),'url':element.url,'title':element.title,'text':element.content.substring(0,300)})
+				});
+				$('.blog_url').each(function(index){
+					$(this).attr('href',blogs[index].url);
+					$(this).text(blogs[index].title);
+				});
+				$('.blog_text').each(function(index){
+					$(this).html(blogs[index].text+"....");
+				});
+				$('.blog_date').each(function(index){
+					$(this).html(blogs[index].date);
+				});
+				$("#blog_post_count").attr('data-perc',json.found);
+			},
+			error:function(){
+				console.log("Error");
+			}      
+	   });
+	}
+
+   console.log(window.location.pathname+window.location.search);
+
+   //enable christmas effects and message.
+   var isChristmasSeason = new Date().getMonth() === 11 && new Date().getDate() >= 24 && new Date().getDate() <= 31;
+   if(isChristmasSeason) {
+		$("div.page").css({
+			'background-image': 'url("/images/christmas-snow-background.jpg")',
+			'width': '100%',
+			'background-size': 'cover'
+		});
+   }
+	//enable these features on index page only.
+   if(window.location.pathname+window.location.search === "/") {
+	   if(isChristmasSeason) {
+
+		particlesJS("particles-js", {
+			"particles": {
+				"number": {
+				"value": 400,
+				"density": {
+					"enable": true,
+					"value_area": 800
+				}
+				},
+				"color": {
+				"value": "#fff"
+				},
+				"shape": {
+				"type": "circle",
+				"stroke": {
+					"width": 0,
+					"color": "#c8e5eb"
+				},
+				"polygon": {
+					"nb_sides": 5
+				},
+				},
+				"opacity": {
+				"value": 1,
+				"random": false,
+				"anim": {
+					"enable": false,
+					"speed": 1,
+					"opacity_min": 0.1,
+					"sync": false
+				}
+				},
+				"size": {
+				"value": 10,
+				"random": true,
+				"anim": {
+					"enable": false,
+				}
+				},
+				"line_linked": {
+				"enable": false,
+				},
+				"move": {
+				"enable": true,
+				"speed": 6,
+				"direction": "bottom",
+				"random": false,
+				"straight": false,
+				"out_mode": "out",
+				"bounce": false,
+				"attract": {
+					"enable": false,
+					"rotateX": 600,
+					"rotateY": 1200
+				}
+				}
+			},
+			"interactivity": {
+				"detect_on": "canvas",
+				"events": {
+				"onhover": {
+					"enable": true,
+					"mode": "repulse"
+				},
+				"onclick": {
+					"enable": true,
+					"mode": "repulse"
+				},
+				"resize": true
+				},
+				"modes": {
+				"grab": {
+					"distance": 400,
+					"line_linked": {
+					"opacity": 0.5
+					}
+				},
+				"bubble": {
+					"distance": 100,
+					"size": 4,
+					"duration": 0.3,
+					"opacity": 1,
+					"speed": 3
+				},
+				"repulse": {
+					"distance": 100,
+					"duration": 0.4
+				},
+				"push": {
+					"particles_nb": 4
+				},
+				"remove": {
+					"particles_nb": 2
+				}
+				}
+			},
+			"retina_detect": true
 			});
-			$('.blog_url').each(function(index){
-				$(this).attr('href',blogs[index].url);
-				$(this).text(blogs[index].title);
-			});
-			$('.blog_text').each(function(index){
-				$(this).html(blogs[index].text+"....");
-			});
-			$('.blog_date').each(function(index){
-				$(this).html(blogs[index].date);
-			});
-			$("#blog_post_count").attr('data-perc',json.found);
-		},
-		error:function(){
-			console.log("Error");
-		}      
-   });
+
+			setTimeout(function(){ 
+				alertify.set('notifier','position', 'top-right');
+				alertify.notify('<h4>Merry Christmas!!</h4><blockquote><p style="border-left: none;">Wishing you peace, joy, and all the best this wonderful holiday has to offer. May this incredible time of giving and spending time with family bring you the joy that lasts throughout the year.</p></blockquote>',
+				'custom', 10, function(){  console.log('dismissed'); });
+			}, 2000);		
+
+	   }
+	
+		//display happy new year message till Jan 31st
+		if(new Date().getMonth() === 0 && new Date().getDate() >= 1 && new Date().getDate() <= 31){
+			setTimeout(function(){
+				var currentYear = new Date().getFullYear();
+				alertify.set('notifier','position', 'top-right');
+				alertify.notify('<h4>Happy New Year - '+currentYear+'!</h4><blockquote><p style="border-left: none;">May this new year all your dreams become reality and all of your efforts into excellent achievements.</p></blockquote>',
+				'custom', 10, function(){  console.log('dismissed'); });
+			}, 2000);
+		}
+    }
 
 })(jQuery);
 
