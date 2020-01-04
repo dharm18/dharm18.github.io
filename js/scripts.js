@@ -973,21 +973,24 @@ $(window).load(function(){
 			"retina_detect": true
 			});
 
-			setTimeout(function(){ 
-				alertify.set('notifier','position', 'top-right');
-				alertify.notify('<h4>Merry Christmas!!</h4><blockquote><p style="border-left: none;">Wishing you peace, joy, and all the best this wonderful holiday has to offer. May this incredible time of giving and spending time with family bring you the joy that lasts throughout the year.</p></blockquote>',
-				'custom', 10, function(){  console.log('dismissed'); });
-			}, 2000);		
-
+			if(window.localStorage && !window.localStorage.getItem("isWishedChristmasFirstTime")) {
+				setTimeout(function(){ 
+					alertify.set('notifier','position', 'top-right');
+					alertify.notify('<h4>Merry Christmas!!</h4><blockquote><p style="border-left: none;">Wishing you peace, joy, and all the best this wonderful holiday has to offer. May this incredible time of giving and spending time with family bring you the joy that lasts throughout the year.</p></blockquote>',
+					'custom', 10, function(){  console.log('dismissed'); });
+					window.localStorage.setItem("isWishedChristmasFirstTime", true);
+				}, 2000);		
+			}
 	   }
 	
 		//display happy new year message till Jan 31st
-		if(new Date().getMonth() === 0 && new Date().getDate() >= 1 && new Date().getDate() <= 31){
+		if(window.localStorage && !window.localStorage.getItem("isWishedHappyNewEveFirstTime") && new Date().getMonth() === 0 && new Date().getDate() >= 1 && new Date().getDate() <= 31){
 			setTimeout(function(){
 				var currentYear = new Date().getFullYear();
 				alertify.set('notifier','position', 'top-right');
 				alertify.notify('<h4>Happy New Year - '+currentYear+'!</h4><blockquote><p style="border-left: none;">May this new year all your dreams become reality and all of your efforts into excellent achievements.</p></blockquote>',
 				'custom', 10, function(){  console.log('dismissed'); });
+				window.localStorage.setItem("isWishedHappyNewEveFirstTime", true);
 			}, 2000);
 		}
     }
