@@ -984,7 +984,7 @@ $(window).load(function(){
 	   }
 	
 		//display happy new year message till Jan 31st
-		if(window.localStorage && !window.localStorage.getItem("isWishedHappyNewEveFirstTime") && new Date().getMonth() === 0 && new Date().getDate() >= 1 && new Date().getDate() <= 31){
+		if(window.localStorage && !window.localStorage.getItem("isWishedHappyNewEveFirstTime") && new Date().getMonth() === 0 && new Date().getDate() >= 1 && new Date().getDate() <= 5){
 			setTimeout(function(){
 				var currentYear = new Date().getFullYear();
 				alertify.set('notifier','position', 'top-right');
