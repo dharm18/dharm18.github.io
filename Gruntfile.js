@@ -18,12 +18,6 @@ module.exports = function(grunt) {
                 ],
                 dest: 'resources/dist/js/vendor.js',
             },
-            app: {
-                src: [
-                    'resources/app/**/*.js'
-                ],
-                dest: 'resources/dist/js/app.js',
-			},
             onepage: {
                 src: [
 					'js/vendor/jquery.min.js','js/jquery.queryloader2.js','js/modernizr-2.6.2.min.js',
@@ -43,10 +37,6 @@ module.exports = function(grunt) {
 	            src: 'resources/dist/js/vendor.js',
 	            dest: 'resources/dist/js/vendor.min.js'
 	        },
-	        app: {
-	            src: 'resources/dist/js/app.js',
-	            dest: 'resources/dist/js/app.min.js'
-			},
 			onepage: {
 	            src: 'js/dist/onepage-scripts.js',
 	            dest: 'js/dist/onepage-scripts.min.js'
