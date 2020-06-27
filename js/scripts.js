@@ -836,7 +836,7 @@ $(window).load(function(){
 			url:"https://public-api.wordpress.com/rest/v1/sites/vdharam.wordpress.com/posts/?number=3",
 			dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
 			success:function(json){
-				console.log(json);
+				//console.log(json);
 				var blogs=[];
 				$.each(json.posts,function(i,element){
 					blogs.push({'date':element.modified.substring(0,10),'url':element.url,'title':element.title,'text':element.content.substring(0,300)})
@@ -859,7 +859,7 @@ $(window).load(function(){
 	   });
 	}
 
-   console.log(window.location.pathname+window.location.search);
+   //console.log(window.location.pathname+window.location.search);
 
    //enable christmas effects and message.
    var isChristmasSeason = new Date().getMonth() === 11 && new Date().getDate() >= 24 && new Date().getDate() <= 31;
