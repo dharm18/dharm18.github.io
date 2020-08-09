@@ -831,6 +831,23 @@ $(window).load(function(){
         onComplete: null,  // callback method for when the element finishes updating
 	};
 	
+	var calculateExperienceString = function(fromDate, toDate) {
+		var diff = Math.floor(toDate.getTime() - fromDate.getTime());
+		var day = 1000 * 60 * 60 * 24;
+		var days = Math.floor(diff/day);
+		var months = Math.floor(days/30); 
+		var years = Math.floor(months/12) - 1; // remove 1 year from cacl due to study
+		var message = years;
+		var diffMonths = (months - years*12) - 2; // remove 2 months due to study
+		if(diffMonths > 0) {
+			message = message + "." + diffMonths;
+		}
+
+		return message;
+	};
+
+	//console.log("calculation", calculateExperienceString(new Date(2013,06,01), new Date()));
+
 	if(window.location.pathname+window.location.search === "/") {
 		$.ajax({
 			url:"https://public-api.wordpress.com/rest/v1/sites/vdharam.wordpress.com/posts/?number=3",
@@ -857,9 +874,10 @@ $(window).load(function(){
 				console.log("Error");
 			}      
 	   });
-	}
 
-   //console.log(window.location.pathname+window.location.search);
+	   //dynamic experience calculation
+	   $("#no_of_experience").attr('data-perc', calculateExperienceString(new Date(2013,06,01), new Date()));
+	}
 
    //enable christmas effects and message.
    var isChristmasSeason = new Date().getMonth() === 11 && new Date().getDate() >= 24 && new Date().getDate() <= 31;
