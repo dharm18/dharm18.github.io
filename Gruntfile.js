@@ -10,11 +10,7 @@ module.exports = function(grunt) {
                 src: [
                     'resources/scripts/jquery.min.js',
                     'resources/scripts/bootstrap.min.js',
-                    'resources/scripts/typed.min.js',
-                    'resources/scripts/angular.min.js',
-                    'resources/scripts/angular-route.min.js',
-                    'resources/scripts/angular-animate.min.js',
-					'resources/scripts/loading-bar.min.js'
+                    'resources/scripts/typed.min.js'
                 ],
                 dest: 'resources/dist/js/vendor.js',
             },
