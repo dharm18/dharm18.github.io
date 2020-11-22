@@ -46,10 +46,6 @@
 .accordion .accordion-title.active span {
 	background: url('../images/plus_minus.png') 0px 0px no-repeat;
 }
-{
-}
-.accordion .accordion-title.active a i {
-}
 .accordion .accordion-inner {
 	padding: 7px 10px 10px 15px;
 	display: none;
@@ -171,8 +167,6 @@ alert-message.info a {
 }
 .callout .callout-content {
 	float: left;
-}
-.callout .callout-content p {
 }
 .callout a.button {
 	margin: 0;
@@ -484,8 +478,6 @@ blockquote p {
 	font-weight:bold;
 	box-shadow: 0px -3px 0px 0px #FFD600;
 }
-.tab a.selected i {
-}
 .panel {
 	border: 1px solid #e8e8e8;
 	clear: both;
@@ -751,8 +743,6 @@ opacity: .95;
 	margin-bottom: 0;
 	line-height: 1;
 	cursor: pointer;
-}
-.toggle .toggle-title.active h3 {
 }
 .toggle .toggle-inner {
 	padding: 7px 10px 10px 15px;
