@@ -2932,7 +2932,7 @@ $(window).load(function(){
 	}
 
    //enable christmas effects and message.
-   var isChristmasSeason = new Date().getMonth() === 11 && new Date().getDate() >= 24 && new Date().getDate() <= 31;
+   var isChristmasSeason = new Date().getMonth() === 11 && new Date().getDate() >= 12 && new Date().getDate() <= 31;
    if(isChristmasSeason) {
 		$("div.page").css({
 			'background-image': 'url("/images/christmas-snow-background.jpg")',
