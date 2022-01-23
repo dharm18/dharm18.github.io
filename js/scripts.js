@@ -877,6 +877,12 @@ $(window).load(function(){
 
 	   //dynamic experience calculation
 	   $("#no_of_experience").attr('data-perc', calculateExperienceString(new Date(2013,06,01), new Date()));
+	} else if(window.location.pathname+window.location.search === "/about-me/") {
+		var no_of_experience = calculateExperienceString(new Date(2013,06,01), new Date());
+		if(parseInt(no_of_experience) !== no_of_experience) {
+			no_of_experience = parseInt(no_of_experience) + '+';	
+		}
+		$("#no_of_experience").html(no_of_experience);
 	}
 
    //enable christmas effects and message.
