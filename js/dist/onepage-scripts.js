@@ -2949,7 +2949,7 @@ $(window).load(function(){
 	//enable these features on index page only.
    if(window.location.pathname+window.location.search === "/") {
 	   if(isChristmasSeason) {
-
+		$('.snow').hide();
 		particlesJS("particles-js", {
 			"particles": {
 				"number": {
