@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MongoDB and HBase Benchmarking | Dharmendra Vishwakarma</title>
+    <meta
+      name="description"
+      content="Case study: comparative MongoDB and HBase benchmarking using YCSB, OpenStack instances, throughput, insert latency, and read latency analysis."
+    >
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="../../" aria-label="Back to portfolio v2">
+        <span class="brand-mark">DV</span>
+        <span class="brand-copy">
+          <strong>Dharmendra Vishwakarma</strong>
+          <span>Case Study</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Case navigation">
+        <a href="../../#work">Work</a>
+        <a href="../../#stack">Stack</a>
+        <a href="../../#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="../../#work">Back</a>
+    </header>
+
+    <main id="main" class="case-page">
+      <section class="case-hero" aria-labelledby="case-title">
+        <p class="eyebrow">Storage Systems | YCSB | OpenStack</p>
+        <h1 id="case-title">Benchmarking MongoDB and HBase with YCSB.</h1>
+        <p class="hero-lede">
+          A data storage and management project comparing NoSQL database behavior under
+          repeatable Yahoo Cloud Serving Benchmark workloads.
+        </p>
+        <div class="case-stat-row" aria-label="Project scope">
+          <div>
+            <strong>2</strong>
+            <span>NoSQL databases</span>
+          </div>
+          <div>
+            <strong>YCSB</strong>
+            <span>benchmarking tool</span>
+          </div>
+          <div>
+            <strong>D</strong>
+            <span>workload focus</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-detail-grid" aria-label="Case study details">
+        <article>
+          <h2>Problem</h2>
+          <p>
+            Different NoSQL databases make different tradeoffs for read latency, insert latency,
+            and throughput. The project examined those tradeoffs with a repeatable test strategy.
+          </p>
+        </article>
+        <article>
+          <h2>Approach</h2>
+          <p>
+            MongoDB and HBase were installed on OpenStack instances and exercised through YCSB
+            workloads, with the results captured across throughput and latency dimensions.
+          </p>
+        </article>
+        <article>
+          <h2>Measurement</h2>
+          <p>
+            The analysis compared overall operations per second, average insert latency,
+            average read latency, and the effect of total operation count under Workload D.
+          </p>
+        </article>
+        <article>
+          <h2>Outcome</h2>
+          <p>
+            The project produced an evidence-based comparison and a test plan that connected
+            database architecture choices to measurable performance behavior.
+          </p>
+        </article>
+      </section>
+
+      <figure class="case-artifact">
+        <img
+          src="../../../images/projects/mongo_vs_hbase3.png"
+          alt="MongoDB and HBase throughput comparison chart"
+        >
+        <figcaption>Overall throughput in operations per second across total operation count for Workload D.</figcaption>
+      </figure>
+
+      <section class="case-note" aria-labelledby="case-lessons">
+        <h2 id="case-lessons">Why it still matters</h2>
+        <p>
+          Benchmarking work builds the same instincts needed in production platform engineering:
+          define the workload, control the test environment, measure the right signals, and avoid
+          architecture decisions based only on vendor preference.
+        </p>
+        <a class="button button-secondary" href="../../../projects/Comparative-study-of-MongoDB-and-HBase-using-YCSB-tool/">
+          Open legacy project archive
+        </a>
+      </section>
+    </main>
+  </body>
+</html>

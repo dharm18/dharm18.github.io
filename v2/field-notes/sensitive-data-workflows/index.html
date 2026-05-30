@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sensitive Data Workflows | Dharmendra Vishwakarma</title>
+    <meta
+      name="description"
+      content="Field note on handling PCI, PII, and sensitive document data in enterprise workflows."
+    >
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../styles.css">
+  </head>
+  <body class="note-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="../../" aria-label="Back to portfolio v2">
+        <span class="brand-mark">DV</span>
+        <span class="brand-copy">
+          <strong>Dharmendra Vishwakarma</strong>
+          <span>Field Note</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Field note navigation">
+        <a href="../../#work">Work</a>
+        <a href="../../#field-notes">Notes</a>
+        <a href="../../#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="../../#field-notes">Back</a>
+    </header>
+
+    <main id="main">
+      <section class="case-hero" aria-labelledby="note-title">
+        <p class="eyebrow">Field Note | Security | Enterprise Systems</p>
+        <h1 id="note-title">Handling sensitive data in enterprise workflows.</h1>
+        <p class="hero-lede">
+          Sensitive data work is not only a compliance checklist. It is a system design habit:
+          know what data exists, where it moves, who can touch it, and what should never appear
+          in logs, dashboards, or support workflows.
+        </p>
+      </section>
+
+      <article class="note-article">
+        <p>
+          Teams often talk about PCI, PII, and confidential document data as policy concerns.
+          Engineers experience them as daily design constraints. Every API, queue, cache, log,
+          report, and test fixture can either preserve trust or quietly weaken it.
+        </p>
+
+        <div class="note-callout">
+          <p>The safest sensitive-data system is the one that makes unsafe behavior hard to do by accident.</p>
+        </div>
+
+        <h2>Map data before designing features</h2>
+        <p>
+          Start with a simple map: what is collected, what is derived, where it is stored, where
+          it is sent, how long it lives, and who needs access. This turns abstract security into
+          concrete engineering decisions.
+        </p>
+
+        <h2>Keep logs useful but disciplined</h2>
+        <p>
+          Logs should explain behavior without carrying customer secrets. Use identifiers that
+          help debugging, avoid raw payloads, and make redaction a default pattern rather than a
+          late code-review comment.
+        </p>
+
+        <h2>Separate access from convenience</h2>
+        <ul>
+          <li>Prefer narrow service contracts over broad data exposure.</li>
+          <li>Use role and environment boundaries that match operational responsibility.</li>
+          <li>Make support and debugging paths explicit instead of relying on informal access.</li>
+          <li>Ensure test data cannot accidentally become production-like sensitive data.</li>
+        </ul>
+
+        <h2>Design for reviewability</h2>
+        <p>
+          The best secure systems are easy to review. Data flow, access behavior, retention, and
+          failure handling should be visible in architecture documents and code structure, not
+          hidden across tribal knowledge.
+        </p>
+
+        <h2>The trust test</h2>
+        <p>
+          If a customer asked how their data moves through the system, the team should be able to
+          answer calmly and accurately. That is the bar I use when designing sensitive workflows.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>

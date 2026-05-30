@@ -86,6 +86,7 @@
         <a href="#work">Work</a>
         <a href="#stack">Stack</a>
         <a href="#proof">Proof</a>
+        <a href="#field-notes">Notes</a>
       </nav>
 
       <a class="nav-cta" href="#contact">Contact</a>
@@ -298,6 +299,7 @@
               Delivered filter-based jobs, plan limit enforcement, backend reliability improvements,
               telemetry, documentation, and cross-functional release coordination.
             </p>
+            <a href="./cases/aje-cx-ga/">Read case study</a>
           </article>
           <article>
             <span>AI Reprocessing</span>
@@ -371,7 +373,7 @@
                 Compared NoSQL databases on OpenStack instances using throughput and latency
                 measurements for data storage and management coursework.
               </p>
-              <a href="../projects/Comparative-study-of-MongoDB-and-HBase-using-YCSB-tool/">Read case study</a>
+              <a href="./cases/mongodb-hbase-ycsb/">Read case study</a>
             </div>
           </article>
 
@@ -387,7 +389,7 @@
                 Built a CRM solution from a field-force case study, turning business requirements
                 into dashboard-led operational workflows.
               </p>
-              <a href="../projects/strategic-ict-project-on-field-force-management/">Read case study</a>
+              <a href="./cases/field-force-management/">Read case study</a>
             </div>
           </article>
         </div>
@@ -493,46 +495,90 @@
         </div>
       </section>
 
-      <section id="writing" class="section writing-section" aria-labelledby="writing-title">
-        <div class="section-kicker">Writing Agenda</div>
+      <section id="field-notes" class="section writing-section" aria-labelledby="field-notes-title">
+        <div class="section-kicker">Field Notes</div>
         <div class="split-heading">
-          <h2 id="writing-title">Topics worth turning into field notes.</h2>
+          <h2 id="field-notes-title">Practical notes from building production platforms.</h2>
           <p>
-            I want to write the kind of notes I wish I had while building production systems:
-            specific, experience-backed, and useful to engineers making architecture decisions.
+            These are short, experience-backed essays for engineers and engineering leaders
+            making decisions about AI workflows, sensitive data, reliability, and delivery
+            under ambiguity.
           </p>
         </div>
 
         <div class="writing-list">
           <article>
             <span>AI Platforms</span>
-            <h3>Designing service boundaries for document intelligence systems</h3>
+            <div>
+              <h3>Designing reliable AI reprocessing without operational debt</h3>
+              <p>
+                How to think about idempotency, shard-aware work, disaster recovery,
+                backpressure, and observability before reprocessing becomes a production tax.
+              </p>
+              <a href="./field-notes/reliable-ai-reprocessing/">Read field note</a>
+            </div>
           </article>
           <article>
             <span>Security</span>
-            <h3>Handling PCI, PII, and sensitive document data in enterprise workflows</h3>
+            <div>
+              <h3>Handling sensitive data in enterprise workflows</h3>
+              <p>
+                A practical framing for PCI, PII, document data, access boundaries,
+                logging discipline, and the engineering habits that protect customer trust.
+              </p>
+              <a href="./field-notes/sensitive-data-workflows/">Read field note</a>
+            </div>
           </article>
           <article>
             <span>Leadership</span>
-            <h3>How calm delivery works when the system is complex</h3>
+            <div>
+              <h3>How calm delivery works when the system is complex</h3>
+              <p>
+                The operating rhythm I use when requirements are changing, systems are
+                coupled, releases matter, and people need clarity more than noise.
+              </p>
+              <a href="./field-notes/calm-delivery-complex-systems/">Read field note</a>
+            </div>
           </article>
         </div>
       </section>
 
       <section id="contact" class="contact-band" aria-labelledby="contact-title">
         <div>
-          <p class="section-kicker">Review Mode</p>
+          <p class="section-kicker">Contact</p>
           <h2 id="contact-title">Open to engineering leadership, platform, and backend systems conversations.</h2>
           <p>
-            The page is still hidden from search while the story is being refined. Once the content
-            feels accurate, it can replace the current homepage and become the main vdharam.com
-            experience.
+            The fastest way to reach me is email. I am always glad to connect about backend
+            platforms, AI workflow reliability, technical leadership, and thoughtful engineering
+            roles.
           </p>
         </div>
-        <div class="contact-actions">
-          <a class="button button-primary" href="https://www.linkedin.com/in/vdharam/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="button button-secondary" href="https://github.com/dharm18" target="_blank" rel="noopener">GitHub</a>
-          <a class="button button-tertiary" href="../">Legacy site</a>
+        <div class="contact-panel">
+          <a class="button button-primary" href="mailto:vishdharm.181910@gmail.com?subject=Portfolio%20conversation">Email me directly</a>
+          <form class="contact-form" action="https://formspree.io/vishdharm.181910+www@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Portfolio v2 enquiry">
+            <label for="contact-name">Name</label>
+            <input type="text" name="contact[name]" id="contact-name" autocomplete="name" placeholder="Your name" required>
+
+            <label for="contact-email">Email</label>
+            <input type="email" name="contact[email]" id="contact-email" autocomplete="email" placeholder="you@example.com" required>
+
+            <label for="contact-subject">Subject</label>
+            <input type="text" name="contact[subject]" id="contact-subject" placeholder="Platform, backend, leadership..." required>
+
+            <label for="contact-message">Message</label>
+            <textarea name="contact[message]" id="contact-message" rows="5" placeholder="What would you like to discuss?" required></textarea>
+
+            <label class="hidden-field" for="contact-company">Company</label>
+            <input class="hidden-field" type="text" name="_gotcha" id="contact-company" tabindex="-1" autocomplete="off">
+
+            <button class="button button-secondary" type="submit">Send message</button>
+          </form>
+          <div class="contact-links" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/vdharam/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/dharm18" target="_blank" rel="noopener">GitHub</a>
+            <a href="../">Legacy site</a>
+          </div>
         </div>
       </section>
     </main>
