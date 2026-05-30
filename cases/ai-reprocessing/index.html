@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Reprocessing Platform Ownership | Dharmendra Vishwakarma</title>
+    <meta
+      name="description"
+      content="Case study: NDA-safe overview of AI reprocessing platform ownership from exploration through GA, scale-up, processor logic, ShardId handling, disaster recovery, deployments, and production readiness."
+    >
+    <meta name="author" content="Dharmendra Vishwakarma">
+    <meta name="theme-color" content="#f7f4ec">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="vdharam.com">
+    <meta property="og:locale" content="en_IE">
+    <meta property="og:title" content="AI Reprocessing Platform Ownership | Dharmendra Vishwakarma">
+    <meta property="og:description" content="Production backend case study on AI reprocessing ownership, scale-up, resilience, deployments, and production readiness.">
+    <meta property="og:url" content="https://www.vdharam.com/cases/ai-reprocessing/">
+    <meta property="og:image" content="https://www.vdharam.com/images/Dharmendra_Vishwakarma_Professional_Pic.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Reprocessing Platform Ownership | Dharmendra Vishwakarma">
+    <meta name="twitter:description" content="NDA-safe production case study on owning AI reprocessing from exploration through GA and scale-up.">
+    <meta name="twitter:image" content="https://www.vdharam.com/images/Dharmendra_Vishwakarma_Professional_Pic.jpeg">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="canonical" href="https://www.vdharam.com/cases/ai-reprocessing/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../../styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "Owning AI reprocessing from exploration through GA and scale-up",
+        "description": "NDA-safe case study on AI reprocessing platform ownership, processor logic, ShardId handling, disaster recovery, deployments, and production readiness.",
+        "url": "https://www.vdharam.com/cases/ai-reprocessing/",
+        "dateModified": "2026-05-30",
+        "author": {
+          "@type": "Person",
+          "name": "Dharmendra Vishwakarma",
+          "url": "https://www.vdharam.com/"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Dharmendra Vishwakarma"
+        },
+        "about": ["AI reprocessing", "distributed systems", "backend reliability", "production readiness"]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="../../" aria-label="Back to portfolio">
+        <span class="brand-mark">DV</span>
+        <span class="brand-copy">
+          <strong>Dharmendra Vishwakarma</strong>
+          <span>Production Case Study</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Case navigation">
+        <a href="../../#work">Work</a>
+        <a href="../../#stack">Stack</a>
+        <a href="../../#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="../../#work">Back</a>
+    </header>
+
+    <main id="main" class="case-page">
+      <section class="case-hero" aria-labelledby="case-title">
+        <p class="eyebrow">DocuSign | AI Workflows | Distributed Processing</p>
+        <h1 id="case-title">Owning AI reprocessing from exploration through GA and scale-up.</h1>
+        <p class="hero-lede">
+          An NDA-safe production case study on turning a complex AI reprocessing capability into
+          a controlled, observable, and operable backend workflow.
+        </p>
+        <div class="case-stat-row" aria-label="Case study signals">
+          <div>
+            <strong>DRI</strong>
+            <span>delivery ownership</span>
+          </div>
+          <div>
+            <strong>GA</strong>
+            <span>release path</span>
+          </div>
+          <div>
+            <strong>Scale</strong>
+            <span>operational readiness</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-detail-grid" aria-label="Case study details">
+        <article>
+          <h2>Context</h2>
+          <p>
+            Reprocessing AI-backed work is not just a retry mechanism. It becomes a production
+            workflow with state, customer expectations, recovery paths, and downstream capacity
+            considerations.
+          </p>
+        </article>
+        <article>
+          <h2>Constraints</h2>
+          <p>
+            The work needed to handle partial progress, shard-aware processing, deployment timing,
+            database recovery concerns, and clear signals for operators before expanding usage.
+          </p>
+        </article>
+        <article>
+          <h2>Ownership</h2>
+          <p>
+            I drove the feature from exploration through GA and scale-up as DRI, including
+            processor logic, ShardId handling, DB disaster recovery, deployments, and readiness.
+          </p>
+        </article>
+        <article>
+          <h2>Outcome</h2>
+          <p>
+            The workflow moved from uncertain capability to a more reliable production operation,
+            with clearer engineering ownership, rollout behavior, and operational expectations.
+          </p>
+        </article>
+      </section>
+
+      <section class="case-note case-narrative" aria-labelledby="case-decisions">
+        <h2 id="case-decisions">Engineering decisions</h2>
+        <div class="decision-list">
+          <article>
+            <span>State and retry</span>
+            <p>
+              Treated reprocessing as controlled work with explicit state, failure visibility,
+              and safe re-entry rather than a one-off batch action.
+            </p>
+          </article>
+          <article>
+            <span>Shard awareness</span>
+            <p>
+              Kept data placement and processing boundaries visible so the workflow could operate
+              predictably across distributed backend systems.
+            </p>
+          </article>
+          <article>
+            <span>Release readiness</span>
+            <p>
+              Connected implementation details to deployment planning, disaster recovery thinking,
+              telemetry, and supportability before broader scale-up.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-note" aria-labelledby="case-lessons">
+        <h2 id="case-lessons">Why it matters</h2>
+        <p>
+          AI platform features need more than model output. They need operational contracts:
+          what happens when work fails, how the team knows, how it retries, how it scales, and
+          how engineers can operate it without depending on tribal knowledge.
+        </p>
+        <a class="button button-secondary" href="../../field-notes/reliable-ai-reprocessing/">Read related field note</a>
+      </section>
+    </main>
+  </body>
+</html>
