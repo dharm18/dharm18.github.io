@@ -43,6 +43,14 @@ a {
   text-underline-offset: 0.2em;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(31, 95, 139, 0.42);
+  outline-offset: 3px;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -128,6 +136,12 @@ img {
 
 .nav-links a:hover {
   color: var(--teal);
+}
+
+.nav-links a.is-active,
+.nav-links a[aria-current="true"] {
+  color: var(--teal);
+  box-shadow: inset 0 -2px 0 var(--teal);
 }
 
 .nav-cta {
@@ -227,6 +241,12 @@ h3 {
   border-radius: 8px;
   font-weight: 700;
   line-height: 1.15;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .button-primary {
@@ -243,6 +263,11 @@ h3 {
   color: var(--surface);
   background: transparent;
   border-color: rgba(255, 253, 247, 0.35);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(17, 20, 22, 0.12);
 }
 
 .trust-row {
@@ -382,6 +407,10 @@ h3 {
   min-height: 320px;
   padding: clamp(1.15rem, 3vw, 2rem);
   background: var(--surface);
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .impact-grid span {
@@ -413,6 +442,10 @@ h3 {
   gap: clamp(1rem, 3vw, 2rem);
   padding: clamp(1.15rem, 3vw, 2rem);
   background: rgba(255, 253, 247, 0.76);
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .timeline-date {
@@ -457,6 +490,10 @@ h3 {
   min-height: 300px;
   padding: clamp(1.15rem, 3vw, 1.7rem);
   background: var(--surface-cool);
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .expert-grid span {
@@ -491,6 +528,25 @@ h3 {
   border-radius: 8px;
   background: var(--surface);
   box-shadow: 0 14px 38px rgba(17, 20, 22, 0.06);
+  transition:
+    border-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.impact-grid article:hover,
+.timeline article:hover,
+.expert-grid article:hover,
+.case-card:hover,
+.stack-grid article:hover,
+.quote-grid figure:hover,
+.writing-list article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 42px rgba(17, 20, 22, 0.1);
+}
+
+.case-card:hover {
+  border-color: rgba(0, 107, 92, 0.42);
 }
 
 .case-featured {
@@ -545,6 +601,10 @@ h3 {
   min-height: 220px;
   padding: clamp(1.15rem, 3vw, 1.7rem);
   background: rgba(255, 253, 247, 0.76);
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .stack-grid h3 {
@@ -621,6 +681,10 @@ h3 {
   margin: 0;
   padding: 1.15rem;
   background: rgba(255, 253, 247, 0.76);
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .quote-grid blockquote {
@@ -650,6 +714,10 @@ h3 {
   align-items: start;
   padding: 1.15rem;
   background: var(--surface);
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .writing-list h3 {
@@ -669,6 +737,38 @@ h3 {
   color: var(--teal);
   font-weight: 700;
   text-decoration: none;
+}
+
+.expert-grid a:hover,
+.case-card a:hover,
+.writing-list a:hover,
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+.motion-ready .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 520ms ease,
+    transform 520ms ease;
+}
+
+.motion-ready .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.motion-ready .reveal:nth-child(2) {
+  transition-delay: 70ms;
+}
+
+.motion-ready .reveal:nth-child(3) {
+  transition-delay: 120ms;
+}
+
+.motion-ready .reveal:nth-child(4) {
+  transition-delay: 170ms;
 }
 
 .note-page {
@@ -1042,5 +1142,33 @@ h3 {
   .contact-actions,
   .contact-panel {
     justify-content: stretch;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .button:hover,
+  .impact-grid article:hover,
+  .timeline article:hover,
+  .expert-grid article:hover,
+  .case-card:hover,
+  .stack-grid article:hover,
+  .quote-grid figure:hover,
+  .writing-list article:hover,
+  .motion-ready .reveal {
+    opacity: 1;
+    transform: none;
+    box-shadow: none;
   }
 }
