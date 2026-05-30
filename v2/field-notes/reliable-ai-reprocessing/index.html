@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reliable AI Reprocessing | Dharmendra Vishwakarma</title>
+    <meta
+      name="description"
+      content="Field note on designing reliable AI reprocessing workflows without creating operational debt."
+    >
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../styles.css">
+  </head>
+  <body class="note-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="../../" aria-label="Back to portfolio v2">
+        <span class="brand-mark">DV</span>
+        <span class="brand-copy">
+          <strong>Dharmendra Vishwakarma</strong>
+          <span>Field Note</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Field note navigation">
+        <a href="../../#work">Work</a>
+        <a href="../../#field-notes">Notes</a>
+        <a href="../../#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="../../#field-notes">Back</a>
+    </header>
+
+    <main id="main">
+      <section class="case-hero" aria-labelledby="note-title">
+        <p class="eyebrow">Field Note | AI Platforms | Reliability</p>
+        <h1 id="note-title">Designing reliable AI reprocessing without operational debt.</h1>
+        <p class="hero-lede">
+          Reprocessing looks simple until it becomes a second production system: it has state,
+          failure modes, customer expectations, capacity pressure, and a habit of exposing every
+          weak boundary in the original design.
+        </p>
+      </section>
+
+      <article class="note-article">
+        <p>
+          The safest way to design reprocessing is to treat it as a first-class workflow from the
+          beginning. It needs product semantics, operational controls, and engineering ownership.
+          A button or batch job is not enough when the data matters and customers depend on the
+          outcome.
+        </p>
+
+        <div class="note-callout">
+          <p>Good reprocessing is not just retry logic. It is controlled, observable, repeatable work.</p>
+        </div>
+
+        <h2>Start with ownership boundaries</h2>
+        <p>
+          Before writing processor logic, define what each service owns: job creation, item
+          selection, execution state, failure recording, customer-visible status, and cleanup.
+          If the boundaries are vague, production incidents will turn into archaeology.
+        </p>
+
+        <h2>Design for idempotency and partial progress</h2>
+        <p>
+          Reprocessing rarely finishes perfectly on the first run. Networks fail, downstream
+          services throttle, data changes, and deployments happen mid-flight. The workflow should
+          allow safe re-entry, avoid duplicate side effects, and make partial progress visible.
+        </p>
+
+        <h2>Make scale controls explicit</h2>
+        <ul>
+          <li>Use rate limits and backpressure so reprocessing does not compete unfairly with live traffic.</li>
+          <li>Partition work in a way that respects shard, tenant, or account boundaries.</li>
+          <li>Expose controls for pausing, resuming, and safely draining work.</li>
+          <li>Set TTL and cleanup rules so historical jobs do not become permanent operational clutter.</li>
+        </ul>
+
+        <h2>Instrument the questions people will ask</h2>
+        <p>
+          During rollout, the questions arrive quickly: how many jobs are queued, which accounts
+          are affected, where are failures concentrated, which downstream dependency is slow, and
+          whether retrying will help. Telemetry should answer those questions without a code dive.
+        </p>
+
+        <h2>The senior-engineer test</h2>
+        <p>
+          A reliable reprocessing system should help the next engineer operate it calmly. If the
+          system needs the original author in every incident, the design is not finished.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
