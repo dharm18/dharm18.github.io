@@ -14,6 +14,9 @@ This personal website built for showcasing the skills and achievements. This als
 - User navigation pages design.
 - Dynamic logic for showing the latest Wordpress blog posts.
 
+## Local Development
+The current site is served as static HTML, CSS and JavaScript through GitHub Pages. The npm manifest is intentionally dependency-free so security auditing stays clean; previously generated legacy assets are committed in the repository. For a local preview, run `npm run serve` and open `http://127.0.0.1:4175/`.
+
 The website has following menus which allows anyone to navigate and access profile.
 - **[Home](https://www.vdharam.com/)**: Overview of entire portfolio. Further menu gives more detailed and intuitive information. 
 - **[About](https://www.vdharam.com/about-me/)**: Detailed description about myself.
